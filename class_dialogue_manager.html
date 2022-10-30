@@ -1,0 +1,975 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Kingdom&amp;Castles: Класс DialogueManager</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="index.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">Kingdom&amp;Castles
+   </div>
+   <div id="projectbrief">Игра представляет собой пошаговую онлайн стратегию, в которой игрокам необходимо вернуть «Священное знание», изучая различные технологии путем сбора и комбинирования различных «Осколков истины».</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pub-static-methods">Открытые статические члены</a> &#124;
+<a href="#pri-methods">Закрытые члены</a> &#124;
+<a href="#pri-static-methods">Закрытые статические члены</a> &#124;
+<a href="#pri-attribs">Закрытые данные</a> &#124;
+<a href="#pri-static-attribs">Закрытые статические данные</a> &#124;
+<a href="class_dialogue_manager-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle"><div class="title">Класс DialogueManager</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Диалоговый менеджер. 
+ <a href="class_dialogue_manager.html#details">Подробнее...</a></p>
+<div class="dynheader">
+Граф наследования:DialogueManager:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_dialogue_manager.png" alt=""/>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a7f4cf55c008b060f9bc4a40eb669bf7b"><td class="memItemLeft" align="right" valign="top"><a id="a7f4cf55c008b060f9bc4a40eb669bf7b" name="a7f4cf55c008b060f9bc4a40eb669bf7b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>StartDialogue</b> ()</td></tr>
+<tr class="memdesc:a7f4cf55c008b060f9bc4a40eb669bf7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Начать диалог.<br /></td></tr>
+<tr class="separator:a7f4cf55c008b060f9bc4a40eb669bf7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a131c7852ccce42feca9254e86c17279d"><td class="memItemLeft" align="right" valign="top"><a id="a131c7852ccce42feca9254e86c17279d" name="a131c7852ccce42feca9254e86c17279d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnClickDialogue</b> ()</td></tr>
+<tr class="memdesc:a131c7852ccce42feca9254e86c17279d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Событие на нажатие кнопки диалоговой панели.<br /></td></tr>
+<tr class="separator:a131c7852ccce42feca9254e86c17279d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27ca0d7fea6a8505cf8c4f584038ff33"><td class="memItemLeft" align="right" valign="top"><a id="a27ca0d7fea6a8505cf8c4f584038ff33" name="a27ca0d7fea6a8505cf8c4f584038ff33"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnClickTechTree</b> ()</td></tr>
+<tr class="memdesc:a27ca0d7fea6a8505cf8c4f584038ff33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Событие на нажатие кнопки древа технологий.<br /></td></tr>
+<tr class="separator:a27ca0d7fea6a8505cf8c4f584038ff33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f7f9140f62f24e9875619f928f1fe92"><td class="memItemLeft" align="right" valign="top"><a id="a0f7f9140f62f24e9875619f928f1fe92" name="a0f7f9140f62f24e9875619f928f1fe92"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnClickThirdTechnology</b> ()</td></tr>
+<tr class="memdesc:a0f7f9140f62f24e9875619f928f1fe92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Событие на нажатие третьей технологии.<br /></td></tr>
+<tr class="separator:a0f7f9140f62f24e9875619f928f1fe92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0560e138c1fa8241be4e56d0021f8501"><td class="memItemLeft" align="right" valign="top"><a id="a0560e138c1fa8241be4e56d0021f8501" name="a0560e138c1fa8241be4e56d0021f8501"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnClickClose</b> ()</td></tr>
+<tr class="memdesc:a0560e138c1fa8241be4e56d0021f8501"><td class="mdescLeft">&#160;</td><td class="mdescRight">Событие на нажатие кнопки "Закрыть".<br /></td></tr>
+<tr class="separator:a0560e138c1fa8241be4e56d0021f8501"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a08cb10fd516f74f1559e464a147810"><td class="memItemLeft" align="right" valign="top"><a id="a6a08cb10fd516f74f1559e464a147810" name="a6a08cb10fd516f74f1559e464a147810"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnClickTextChat</b> ()</td></tr>
+<tr class="memdesc:a6a08cb10fd516f74f1559e464a147810"><td class="mdescLeft">&#160;</td><td class="mdescRight">Событие на нажатие кнопки текствого чата.<br /></td></tr>
+<tr class="separator:a6a08cb10fd516f74f1559e464a147810"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c282ba6db42ffbf2350f70b1b4ba8a7"><td class="memItemLeft" align="right" valign="top"><a id="a0c282ba6db42ffbf2350f70b1b4ba8a7" name="a0c282ba6db42ffbf2350f70b1b4ba8a7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnClickSelfArrow</b> ()</td></tr>
+<tr class="memdesc:a0c282ba6db42ffbf2350f70b1b4ba8a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Событие на нажатие собственной стрелки.<br /></td></tr>
+<tr class="separator:a0c282ba6db42ffbf2350f70b1b4ba8a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba8d5567746712fed785d44ccbedbfb7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dialogue_manager.html#aba8d5567746712fed785d44ccbedbfb7">OnClickShardToExchange</a> (Button button)</td></tr>
+<tr class="memdesc:aba8d5567746712fed785d44ccbedbfb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Событие на нажатие выбора осколка. <a href="class_dialogue_manager.html#aba8d5567746712fed785d44ccbedbfb7">Подробнее...</a><br /></td></tr>
+<tr class="separator:aba8d5567746712fed785d44ccbedbfb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78eeb6060cb0792ef486f2aee1ea6cfd"><td class="memItemLeft" align="right" valign="top"><a id="a78eeb6060cb0792ef486f2aee1ea6cfd" name="a78eeb6060cb0792ef486f2aee1ea6cfd"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnClickDonation</b> ()</td></tr>
+<tr class="memdesc:a78eeb6060cb0792ef486f2aee1ea6cfd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Событие на нажатие кнопки "Пожертвование".<br /></td></tr>
+<tr class="separator:a78eeb6060cb0792ef486f2aee1ea6cfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a365d8e6e4b406d73157a6fb4be1ab20f"><td class="memItemLeft" align="right" valign="top"><a id="a365d8e6e4b406d73157a6fb4be1ab20f" name="a365d8e6e4b406d73157a6fb4be1ab20f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnClickAgreement</b> ()</td></tr>
+<tr class="memdesc:a365d8e6e4b406d73157a6fb4be1ab20f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Событие на нажатие кнопки "Соглашение".<br /></td></tr>
+<tr class="separator:a365d8e6e4b406d73157a6fb4be1ab20f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a11b5cd7b3a0cba307a52f816271779"><td class="memItemLeft" align="right" valign="top"><a id="a0a11b5cd7b3a0cba307a52f816271779" name="a0a11b5cd7b3a0cba307a52f816271779"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnClickConfirm</b> ()</td></tr>
+<tr class="memdesc:a0a11b5cd7b3a0cba307a52f816271779"><td class="mdescLeft">&#160;</td><td class="mdescRight">Событие на нажатие кнопки "Подтвердить".<br /></td></tr>
+<tr class="separator:a0a11b5cd7b3a0cba307a52f816271779"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Открытые статические члены</h2></td></tr>
+<tr class="memitem:af3bc0f97fadb4b40ae7784d2889b64a3"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dialogue_manager.html#af3bc0f97fadb4b40ae7784d2889b64a3">PlayAnimation</a> (Animator animator, string animationName)</td></tr>
+<tr class="memdesc:af3bc0f97fadb4b40ae7784d2889b64a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Воспроизвести анимацию. <a href="class_dialogue_manager.html#af3bc0f97fadb4b40ae7784d2889b64a3">Подробнее...</a><br /></td></tr>
+<tr class="separator:af3bc0f97fadb4b40ae7784d2889b64a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Закрытые члены</h2></td></tr>
+<tr class="memitem:a7b40c5c1386c727e3757738a19aac7f2"><td class="memItemLeft" align="right" valign="top"><a id="a7b40c5c1386c727e3757738a19aac7f2" name="a7b40c5c1386c727e3757738a19aac7f2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Start</b> ()</td></tr>
+<tr class="memdesc:a7b40c5c1386c727e3757738a19aac7f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">При старте инициализируем обучение.<br /></td></tr>
+<tr class="separator:a7b40c5c1386c727e3757738a19aac7f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2cf19919daf50cc1646f1476fac5dc6a"><td class="memItemLeft" align="right" valign="top"><a id="a2cf19919daf50cc1646f1476fac5dc6a" name="a2cf19919daf50cc1646f1476fac5dc6a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>InitializeTutorial</b> ()</td></tr>
+<tr class="memdesc:a2cf19919daf50cc1646f1476fac5dc6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Инициализировать руководство.<br /></td></tr>
+<tr class="separator:a2cf19919daf50cc1646f1476fac5dc6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14d5dec8261ce21a94175b1dd6dcdff8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dialogue_manager.html#a14d5dec8261ce21a94175b1dd6dcdff8">SwitchButtons</a> (Button[] buttons, bool enabled)</td></tr>
+<tr class="memdesc:a14d5dec8261ce21a94175b1dd6dcdff8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Переключить кнопки. <a href="class_dialogue_manager.html#a14d5dec8261ce21a94175b1dd6dcdff8">Подробнее...</a><br /></td></tr>
+<tr class="separator:a14d5dec8261ce21a94175b1dd6dcdff8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac16f609f3c1c0ec8e8464d74790925b1"><td class="memItemLeft" align="right" valign="top"><a id="ac16f609f3c1c0ec8e8464d74790925b1" name="ac16f609f3c1c0ec8e8464d74790925b1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>TurnOffArrows</b> ()</td></tr>
+<tr class="memdesc:ac16f609f3c1c0ec8e8464d74790925b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выключить стрелки.<br /></td></tr>
+<tr class="separator:ac16f609f3c1c0ec8e8464d74790925b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf62646bed494bbc272d6b5091e4fe62"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dialogue_manager.html#adf62646bed494bbc272d6b5091e4fe62">GiveOutAllShardsToField</a> (Transform field)</td></tr>
+<tr class="memdesc:adf62646bed494bbc272d6b5091e4fe62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать все осколки на поле. <a href="class_dialogue_manager.html#adf62646bed494bbc272d6b5091e4fe62">Подробнее...</a><br /></td></tr>
+<tr class="separator:adf62646bed494bbc272d6b5091e4fe62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35bbb91c4e71f4004d7e6fa3da091a01"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dialogue_manager.html#a35bbb91c4e71f4004d7e6fa3da091a01">GiveOutSomeShardsToHand</a> (Transform hand)</td></tr>
+<tr class="memdesc:a35bbb91c4e71f4004d7e6fa3da091a01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать несколько осколков в руку. <a href="class_dialogue_manager.html#a35bbb91c4e71f4004d7e6fa3da091a01">Подробнее...</a><br /></td></tr>
+<tr class="separator:a35bbb91c4e71f4004d7e6fa3da091a01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adecf1dbf5711d9e08c9aa570be5c6680"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dialogue_manager.html#adecf1dbf5711d9e08c9aa570be5c6680">GiveOutTwoShardsToHand</a> (Transform hand)</td></tr>
+<tr class="memdesc:adecf1dbf5711d9e08c9aa570be5c6680"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать два осколка в руку. <a href="class_dialogue_manager.html#adecf1dbf5711d9e08c9aa570be5c6680">Подробнее...</a><br /></td></tr>
+<tr class="separator:adecf1dbf5711d9e08c9aa570be5c6680"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a990b8d4499415f467e11c818f9a5a366"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dialogue_manager.html#a990b8d4499415f467e11c818f9a5a366">PlayDialogueAnimations</a> (string dpAnimationName, string charAnimationName, bool animationState)</td></tr>
+<tr class="memdesc:a990b8d4499415f467e11c818f9a5a366"><td class="mdescLeft">&#160;</td><td class="mdescRight">Воспроизвести анимации диалога. <a href="class_dialogue_manager.html#a990b8d4499415f467e11c818f9a5a366">Подробнее...</a><br /></td></tr>
+<tr class="separator:a990b8d4499415f467e11c818f9a5a366"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fae89b066564780e9df98e189c60100"><td class="memItemLeft" align="right" valign="top"><a id="a8fae89b066564780e9df98e189c60100" name="a8fae89b066564780e9df98e189c60100"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SkipSentence</b> ()</td></tr>
+<tr class="memdesc:a8fae89b066564780e9df98e189c60100"><td class="mdescLeft">&#160;</td><td class="mdescRight">Пропустить предложение.<br /></td></tr>
+<tr class="separator:a8fae89b066564780e9df98e189c60100"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a940a9cec4605692d72b0e2e42c891b03"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dialogue_manager.html#a940a9cec4605692d72b0e2e42c891b03">AddToBlackBackground</a> (Transform transform, bool worldPositionStays=true)</td></tr>
+<tr class="memdesc:a940a9cec4605692d72b0e2e42c891b03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавить объект на тёмный фон. <a href="class_dialogue_manager.html#a940a9cec4605692d72b0e2e42c891b03">Подробнее...</a><br /></td></tr>
+<tr class="separator:a940a9cec4605692d72b0e2e42c891b03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c032fa11d5da23cc25e0b8feeb3d2f9"><td class="memItemLeft" align="right" valign="top">IEnumerator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dialogue_manager.html#a7c032fa11d5da23cc25e0b8feeb3d2f9">WriteSentence</a> (string sentence)</td></tr>
+<tr class="memdesc:a7c032fa11d5da23cc25e0b8feeb3d2f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Корутина, которая пишет предложение на диалоговой панели. <a href="class_dialogue_manager.html#a7c032fa11d5da23cc25e0b8feeb3d2f9">Подробнее...</a><br /></td></tr>
+<tr class="separator:a7c032fa11d5da23cc25e0b8feeb3d2f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ca63738d61abbc9607d8cd7de3bfb90"><td class="memItemLeft" align="right" valign="top"><a id="a4ca63738d61abbc9607d8cd7de3bfb90" name="a4ca63738d61abbc9607d8cd7de3bfb90"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>NextSentence</b> ()</td></tr>
+<tr class="memdesc:a4ca63738d61abbc9607d8cd7de3bfb90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Следующее предложение.<br /></td></tr>
+<tr class="separator:a4ca63738d61abbc9607d8cd7de3bfb90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54314106d505d5fe58ab4a6f9eba3f2f"><td class="memItemLeft" align="right" valign="top"><a id="a54314106d505d5fe58ab4a6f9eba3f2f" name="a54314106d505d5fe58ab4a6f9eba3f2f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>EndDialogue</b> ()</td></tr>
+<tr class="memdesc:a54314106d505d5fe58ab4a6f9eba3f2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Закончить диалог.<br /></td></tr>
+<tr class="separator:a54314106d505d5fe58ab4a6f9eba3f2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ab358c13e3933c4b22bf81cd5dc024a"><td class="memItemLeft" align="right" valign="top"><a id="a9ab358c13e3933c4b22bf81cd5dc024a" name="a9ab358c13e3933c4b22bf81cd5dc024a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SwitchTechTree</b> ()</td></tr>
+<tr class="memdesc:a9ab358c13e3933c4b22bf81cd5dc024a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Переключить древо технологий.<br /></td></tr>
+<tr class="separator:a9ab358c13e3933c4b22bf81cd5dc024a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7593060cd6c253f771ef046aba4b9169"><td class="memItemLeft" align="right" valign="top"><a id="a7593060cd6c253f771ef046aba4b9169" name="a7593060cd6c253f771ef046aba4b9169"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OpenTextChat</b> ()</td></tr>
+<tr class="memdesc:a7593060cd6c253f771ef046aba4b9169"><td class="mdescLeft">&#160;</td><td class="mdescRight">Открыть текстовый чат.<br /></td></tr>
+<tr class="separator:a7593060cd6c253f771ef046aba4b9169"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a955eb380457447b5b080b60b9b763d07"><td class="memItemLeft" align="right" valign="top"><a id="a955eb380457447b5b080b60b9b763d07" name="a955eb380457447b5b080b60b9b763d07"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>CloseTextChat</b> ()</td></tr>
+<tr class="memdesc:a955eb380457447b5b080b60b9b763d07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Закрыть текстовый чат.<br /></td></tr>
+<tr class="separator:a955eb380457447b5b080b60b9b763d07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52a9f96a60fccba288ed7bbfe2c4bb3b"><td class="memItemLeft" align="right" valign="top"><a id="a52a9f96a60fccba288ed7bbfe2c4bb3b" name="a52a9f96a60fccba288ed7bbfe2c4bb3b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ChangeColorOfOpponentArrow</b> ()</td></tr>
+<tr class="memdesc:a52a9f96a60fccba288ed7bbfe2c4bb3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сменить цвет стрелки противника.<br /></td></tr>
+<tr class="separator:a52a9f96a60fccba288ed7bbfe2c4bb3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f51fb1e1cc05c5cddf5f391b7d7661e"><td class="memItemLeft" align="right" valign="top"><a id="a9f51fb1e1cc05c5cddf5f391b7d7661e" name="a9f51fb1e1cc05c5cddf5f391b7d7661e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OpenExchangeWindow</b> ()</td></tr>
+<tr class="memdesc:a9f51fb1e1cc05c5cddf5f391b7d7661e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Открыть окно с выбором осколка.<br /></td></tr>
+<tr class="separator:a9f51fb1e1cc05c5cddf5f391b7d7661e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ddddc2b208489353a76d0bc23c946f6"><td class="memItemLeft" align="right" valign="top"><a id="a7ddddc2b208489353a76d0bc23c946f6" name="a7ddddc2b208489353a76d0bc23c946f6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>DisplayShardSelectionInFields</b> ()</td></tr>
+<tr class="memdesc:a7ddddc2b208489353a76d0bc23c946f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Отобразить выбор осколков на полях.<br /></td></tr>
+<tr class="separator:a7ddddc2b208489353a76d0bc23c946f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6faf5cd30b8cb6f4aa98be85ff1cb625"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dialogue_manager.html#a6faf5cd30b8cb6f4aa98be85ff1cb625">ChangeColorDonationButton</a> (string color)</td></tr>
+<tr class="memdesc:a6faf5cd30b8cb6f4aa98be85ff1cb625"><td class="mdescLeft">&#160;</td><td class="mdescRight">Поменять цвет кнопки пожертвования на указанный. <a href="class_dialogue_manager.html#a6faf5cd30b8cb6f4aa98be85ff1cb625">Подробнее...</a><br /></td></tr>
+<tr class="separator:a6faf5cd30b8cb6f4aa98be85ff1cb625"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf176ff1bcafab5500baf70cc99881ba"><td class="memItemLeft" align="right" valign="top"><a id="acf176ff1bcafab5500baf70cc99881ba" name="acf176ff1bcafab5500baf70cc99881ba"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OpenAgreementWindow</b> ()</td></tr>
+<tr class="memdesc:acf176ff1bcafab5500baf70cc99881ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Открыть окно соглашения.<br /></td></tr>
+<tr class="separator:acf176ff1bcafab5500baf70cc99881ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8580c9a57eb6495ccc69c63e0cf7f448"><td class="memItemLeft" align="right" valign="top"><a id="a8580c9a57eb6495ccc69c63e0cf7f448" name="a8580c9a57eb6495ccc69c63e0cf7f448"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OpenOpponentShards</b> ()</td></tr>
+<tr class="memdesc:a8580c9a57eb6495ccc69c63e0cf7f448"><td class="mdescLeft">&#160;</td><td class="mdescRight">Открыть все осколки противника.<br /></td></tr>
+<tr class="separator:a8580c9a57eb6495ccc69c63e0cf7f448"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28965995bfa548bf143fbe5d8310ad37"><td class="memItemLeft" align="right" valign="top"><a id="a28965995bfa548bf143fbe5d8310ad37" name="a28965995bfa548bf143fbe5d8310ad37"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>GoBackToMenu</b> ()</td></tr>
+<tr class="memdesc:a28965995bfa548bf143fbe5d8310ad37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вернуться в главное меню.<br /></td></tr>
+<tr class="separator:a28965995bfa548bf143fbe5d8310ad37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
+Закрытые статические члены</h2></td></tr>
+<tr class="memitem:a4e7161c29ec44e87a6e18442410f834a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dialogue_manager.html#a4e7161c29ec44e87a6e18442410f834a">PlayAnimation</a> (Animator animator, string animationName, bool animationState)</td></tr>
+<tr class="memdesc:a4e7161c29ec44e87a6e18442410f834a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Воспроизвести анимацию. <a href="class_dialogue_manager.html#a4e7161c29ec44e87a6e18442410f834a">Подробнее...</a><br /></td></tr>
+<tr class="separator:a4e7161c29ec44e87a6e18442410f834a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5561da27444c181330d2cf0a77076736"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dialogue_manager.html#a5561da27444c181330d2cf0a77076736">RemoveFromBlackBackground</a> (Transform transform, Transform place, bool worldPositionStays=true)</td></tr>
+<tr class="memdesc:a5561da27444c181330d2cf0a77076736"><td class="mdescLeft">&#160;</td><td class="mdescRight">Убрать объект из тёмного фона. <a href="class_dialogue_manager.html#a5561da27444c181330d2cf0a77076736">Подробнее...</a><br /></td></tr>
+<tr class="separator:a5561da27444c181330d2cf0a77076736"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Закрытые данные</h2></td></tr>
+<tr class="memitem:a52185817214393d79e225505f7ce330b"><td class="memItemLeft" align="right" valign="top"><a id="a52185817214393d79e225505f7ce330b" name="a52185817214393d79e225505f7ce330b"></a>
+TextAsset&#160;</td><td class="memItemRight" valign="bottom"><b>dialogueXml</b></td></tr>
+<tr class="memdesc:a52185817214393d79e225505f7ce330b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Текст диалогов - XML файл.<br /></td></tr>
+<tr class="separator:a52185817214393d79e225505f7ce330b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d34e6c1cb747564cd61557431407f7c"><td class="memItemLeft" align="right" valign="top"><a id="a6d34e6c1cb747564cd61557431407f7c" name="a6d34e6c1cb747564cd61557431407f7c"></a>
+GameObject&#160;</td><td class="memItemRight" valign="bottom"><b>mainMenu</b></td></tr>
+<tr class="memdesc:a6d34e6c1cb747564cd61557431407f7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Главное меню игры.<br /></td></tr>
+<tr class="separator:a6d34e6c1cb747564cd61557431407f7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a446bcf379441aa049a0d1fa1b4f60cd7"><td class="memItemLeft" align="right" valign="top"><a id="a446bcf379441aa049a0d1fa1b4f60cd7" name="a446bcf379441aa049a0d1fa1b4f60cd7"></a>
+GameObject&#160;</td><td class="memItemRight" valign="bottom"><b>dialoguePanel</b></td></tr>
+<tr class="memdesc:a446bcf379441aa049a0d1fa1b4f60cd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Диалоговая панель.<br /></td></tr>
+<tr class="separator:a446bcf379441aa049a0d1fa1b4f60cd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac90a568d3035f8e6dc7c79262e527504"><td class="memItemLeft" align="right" valign="top"><a id="ac90a568d3035f8e6dc7c79262e527504" name="ac90a568d3035f8e6dc7c79262e527504"></a>
+GameObject[]&#160;</td><td class="memItemRight" valign="bottom"><b>signalArrows</b></td></tr>
+<tr class="memdesc:ac90a568d3035f8e6dc7c79262e527504"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сигнальные стрелки.<br /></td></tr>
+<tr class="separator:ac90a568d3035f8e6dc7c79262e527504"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5984d8c4894238e1fd30868389210c7f"><td class="memItemLeft" align="right" valign="top"><a id="a5984d8c4894238e1fd30868389210c7f" name="a5984d8c4894238e1fd30868389210c7f"></a>
+GameObject&#160;</td><td class="memItemRight" valign="bottom"><b>shardPref</b></td></tr>
+<tr class="memdesc:a5984d8c4894238e1fd30868389210c7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Префаб осколка.<br /></td></tr>
+<tr class="separator:a5984d8c4894238e1fd30868389210c7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4637965eea24e4a7c97f272eaaee433d"><td class="memItemLeft" align="right" valign="top"><a id="a4637965eea24e4a7c97f272eaaee433d" name="a4637965eea24e4a7c97f272eaaee433d"></a>
+GameObject&#160;</td><td class="memItemRight" valign="bottom"><b>techTree</b></td></tr>
+<tr class="memdesc:a4637965eea24e4a7c97f272eaaee433d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Древо технологий.<br /></td></tr>
+<tr class="separator:a4637965eea24e4a7c97f272eaaee433d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a698f5a8e73d2310d86d1f40ad25e8c2e"><td class="memItemLeft" align="right" valign="top"><a id="a698f5a8e73d2310d86d1f40ad25e8c2e" name="a698f5a8e73d2310d86d1f40ad25e8c2e"></a>
+GameObject&#160;</td><td class="memItemRight" valign="bottom"><b>textChat</b></td></tr>
+<tr class="memdesc:a698f5a8e73d2310d86d1f40ad25e8c2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Текстовый чат.<br /></td></tr>
+<tr class="separator:a698f5a8e73d2310d86d1f40ad25e8c2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeea03e35ba354a9965c67417bab8d09c"><td class="memItemLeft" align="right" valign="top"><a id="aeea03e35ba354a9965c67417bab8d09c" name="aeea03e35ba354a9965c67417bab8d09c"></a>
+GameObject&#160;</td><td class="memItemRight" valign="bottom"><b>exchange</b></td></tr>
+<tr class="memdesc:aeea03e35ba354a9965c67417bab8d09c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Окно выбора осколка из списка предложенных.<br /></td></tr>
+<tr class="separator:aeea03e35ba354a9965c67417bab8d09c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40b7db83c5df073757e38c3df77fc9cb"><td class="memItemLeft" align="right" valign="top"><a id="a40b7db83c5df073757e38c3df77fc9cb" name="a40b7db83c5df073757e38c3df77fc9cb"></a>
+GameObject&#160;</td><td class="memItemRight" valign="bottom"><b>agreement</b></td></tr>
+<tr class="memdesc:a40b7db83c5df073757e38c3df77fc9cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Окно с предложением сделать соглашение.<br /></td></tr>
+<tr class="separator:a40b7db83c5df073757e38c3df77fc9cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7142fce133637f2489ccc96987389447"><td class="memItemLeft" align="right" valign="top"><a id="a7142fce133637f2489ccc96987389447" name="a7142fce133637f2489ccc96987389447"></a>
+GameObject[]&#160;</td><td class="memItemRight" valign="bottom"><b>nodesToClose</b></td></tr>
+<tr class="memdesc:a7142fce133637f2489ccc96987389447"><td class="mdescLeft">&#160;</td><td class="mdescRight">Узлы, которые необходимо закрыть.<br /></td></tr>
+<tr class="separator:a7142fce133637f2489ccc96987389447"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a532dd22eef180c007a4384086e028244"><td class="memItemLeft" align="right" valign="top"><a id="a532dd22eef180c007a4384086e028244" name="a532dd22eef180c007a4384086e028244"></a>
+Transform&#160;</td><td class="memItemRight" valign="bottom"><b>blackBackgroundGameField</b></td></tr>
+<tr class="memdesc:a532dd22eef180c007a4384086e028244"><td class="mdescLeft">&#160;</td><td class="mdescRight">Чёрный фон игрового поля.<br /></td></tr>
+<tr class="separator:a532dd22eef180c007a4384086e028244"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af029125dd5ade93a6fae41584f06f081"><td class="memItemLeft" align="right" valign="top"><a id="af029125dd5ade93a6fae41584f06f081" name="af029125dd5ade93a6fae41584f06f081"></a>
+Transform&#160;</td><td class="memItemRight" valign="bottom"><b>allShardsDemoField</b></td></tr>
+<tr class="memdesc:af029125dd5ade93a6fae41584f06f081"><td class="mdescLeft">&#160;</td><td class="mdescRight">Поле для демонстрации всех осколков.<br /></td></tr>
+<tr class="separator:af029125dd5ade93a6fae41584f06f081"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb9f89e28820872a3eca75a4ead75fd0"><td class="memItemLeft" align="right" valign="top"><a id="aeb9f89e28820872a3eca75a4ead75fd0" name="aeb9f89e28820872a3eca75a4ead75fd0"></a>
+Transform&#160;</td><td class="memItemRight" valign="bottom"><b>selfHand</b></td></tr>
+<tr class="memdesc:aeb9f89e28820872a3eca75a4ead75fd0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Собственная рука.<br /></td></tr>
+<tr class="separator:aeb9f89e28820872a3eca75a4ead75fd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb4403fb0b41b675f7948913ddd4f330"><td class="memItemLeft" align="right" valign="top"><a id="afb4403fb0b41b675f7948913ddd4f330" name="afb4403fb0b41b675f7948913ddd4f330"></a>
+Transform&#160;</td><td class="memItemRight" valign="bottom"><b>selfField</b></td></tr>
+<tr class="memdesc:afb4403fb0b41b675f7948913ddd4f330"><td class="mdescLeft">&#160;</td><td class="mdescRight">Собственное поле.<br /></td></tr>
+<tr class="separator:afb4403fb0b41b675f7948913ddd4f330"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a482dd66140fb0154040dd2c4f7d9f37a"><td class="memItemLeft" align="right" valign="top"><a id="a482dd66140fb0154040dd2c4f7d9f37a" name="a482dd66140fb0154040dd2c4f7d9f37a"></a>
+Transform&#160;</td><td class="memItemRight" valign="bottom"><b>opponentHand</b></td></tr>
+<tr class="memdesc:a482dd66140fb0154040dd2c4f7d9f37a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Рука противника.<br /></td></tr>
+<tr class="separator:a482dd66140fb0154040dd2c4f7d9f37a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec46fe25d2dc03eb7cf9ac81b117740d"><td class="memItemLeft" align="right" valign="top"><a id="aec46fe25d2dc03eb7cf9ac81b117740d" name="aec46fe25d2dc03eb7cf9ac81b117740d"></a>
+Transform&#160;</td><td class="memItemRight" valign="bottom"><b>opponentField</b></td></tr>
+<tr class="memdesc:aec46fe25d2dc03eb7cf9ac81b117740d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Поле противника.<br /></td></tr>
+<tr class="separator:aec46fe25d2dc03eb7cf9ac81b117740d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ee3c2dc423fc26dd9e25b4067b1c121"><td class="memItemLeft" align="right" valign="top"><a id="a9ee3c2dc423fc26dd9e25b4067b1c121" name="a9ee3c2dc423fc26dd9e25b4067b1c121"></a>
+Transform&#160;</td><td class="memItemRight" valign="bottom"><b>gameField</b></td></tr>
+<tr class="memdesc:a9ee3c2dc423fc26dd9e25b4067b1c121"><td class="mdescLeft">&#160;</td><td class="mdescRight">Игровое поле.<br /></td></tr>
+<tr class="separator:a9ee3c2dc423fc26dd9e25b4067b1c121"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a404d1e867540783b65559fb119dcf9a3"><td class="memItemLeft" align="right" valign="top"><a id="a404d1e867540783b65559fb119dcf9a3" name="a404d1e867540783b65559fb119dcf9a3"></a>
+Transform&#160;</td><td class="memItemRight" valign="bottom"><b>techTreeIcon</b></td></tr>
+<tr class="memdesc:a404d1e867540783b65559fb119dcf9a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Иконка древа технологий.<br /></td></tr>
+<tr class="separator:a404d1e867540783b65559fb119dcf9a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd39475a6dbf740175b09c9d57632ca8"><td class="memItemLeft" align="right" valign="top">Transform&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dialogue_manager.html#abd39475a6dbf740175b09c9d57632ca8">thirdTechnology</a></td></tr>
+<tr class="memdesc:abd39475a6dbf740175b09c9d57632ca8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Третья технология. <a href="class_dialogue_manager.html#abd39475a6dbf740175b09c9d57632ca8">Подробнее...</a><br /></td></tr>
+<tr class="separator:abd39475a6dbf740175b09c9d57632ca8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba05ccf6c8f06df8880666e62f857e5a"><td class="memItemLeft" align="right" valign="top"><a id="aba05ccf6c8f06df8880666e62f857e5a" name="aba05ccf6c8f06df8880666e62f857e5a"></a>
+Transform&#160;</td><td class="memItemRight" valign="bottom"><b>technologies</b></td></tr>
+<tr class="memdesc:aba05ccf6c8f06df8880666e62f857e5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Место, где находятся технологии.<br /></td></tr>
+<tr class="separator:aba05ccf6c8f06df8880666e62f857e5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a093ec66f9c678be7c04e67cdf18afdd3"><td class="memItemLeft" align="right" valign="top"><a id="a093ec66f9c678be7c04e67cdf18afdd3" name="a093ec66f9c678be7c04e67cdf18afdd3"></a>
+Transform&#160;</td><td class="memItemRight" valign="bottom"><b>conversationRoomGameObjects</b></td></tr>
+<tr class="memdesc:a093ec66f9c678be7c04e67cdf18afdd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Место, где изначально находится рука противника.<br /></td></tr>
+<tr class="separator:a093ec66f9c678be7c04e67cdf18afdd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a554459e059ad71deb09254ae1a306288"><td class="memItemLeft" align="right" valign="top"><a id="a554459e059ad71deb09254ae1a306288" name="a554459e059ad71deb09254ae1a306288"></a>
+Button[]&#160;</td><td class="memItemRight" valign="bottom"><b>techTreeButtons</b></td></tr>
+<tr class="memdesc:a554459e059ad71deb09254ae1a306288"><td class="mdescLeft">&#160;</td><td class="mdescRight">Кнопки первых технологий в древе технологий.<br /></td></tr>
+<tr class="separator:a554459e059ad71deb09254ae1a306288"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4dedd9d1c35250ffc03054ca6d2f8d4"><td class="memItemLeft" align="right" valign="top"><a id="ae4dedd9d1c35250ffc03054ca6d2f8d4" name="ae4dedd9d1c35250ffc03054ca6d2f8d4"></a>
+Button&#160;</td><td class="memItemRight" valign="bottom"><b>closeButton</b></td></tr>
+<tr class="memdesc:ae4dedd9d1c35250ffc03054ca6d2f8d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Кнопка "Закрыть".<br /></td></tr>
+<tr class="separator:ae4dedd9d1c35250ffc03054ca6d2f8d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e2b17b06abeaf5613a5e508a6184721"><td class="memItemLeft" align="right" valign="top"><a id="a2e2b17b06abeaf5613a5e508a6184721" name="a2e2b17b06abeaf5613a5e508a6184721"></a>
+Button&#160;</td><td class="memItemRight" valign="bottom"><b>textChatButton</b></td></tr>
+<tr class="memdesc:a2e2b17b06abeaf5613a5e508a6184721"><td class="mdescLeft">&#160;</td><td class="mdescRight">Кнопка текстового чата.<br /></td></tr>
+<tr class="separator:a2e2b17b06abeaf5613a5e508a6184721"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeeca3aeebef304ef895203fee8dc4bfc"><td class="memItemLeft" align="right" valign="top"><a id="aeeca3aeebef304ef895203fee8dc4bfc" name="aeeca3aeebef304ef895203fee8dc4bfc"></a>
+Button&#160;</td><td class="memItemRight" valign="bottom"><b>selfArrowButton</b></td></tr>
+<tr class="memdesc:aeeca3aeebef304ef895203fee8dc4bfc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Кнопка подтверждения готовности к обмену.<br /></td></tr>
+<tr class="separator:aeeca3aeebef304ef895203fee8dc4bfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac82dd6aee947cfe535385ce3b1087c72"><td class="memItemLeft" align="right" valign="top"><a id="ac82dd6aee947cfe535385ce3b1087c72" name="ac82dd6aee947cfe535385ce3b1087c72"></a>
+Button&#160;</td><td class="memItemRight" valign="bottom"><b>donationButton</b></td></tr>
+<tr class="memdesc:ac82dd6aee947cfe535385ce3b1087c72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Кнопка пожертвований.<br /></td></tr>
+<tr class="separator:ac82dd6aee947cfe535385ce3b1087c72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a574127875e2ad6e29b675d37451c0665"><td class="memItemLeft" align="right" valign="top"><a id="a574127875e2ad6e29b675d37451c0665" name="a574127875e2ad6e29b675d37451c0665"></a>
+Button[]&#160;</td><td class="memItemRight" valign="bottom"><b>shardsToExchange</b></td></tr>
+<tr class="memdesc:a574127875e2ad6e29b675d37451c0665"><td class="mdescLeft">&#160;</td><td class="mdescRight">Кнопки осколков в окне выбора осколков.<br /></td></tr>
+<tr class="separator:a574127875e2ad6e29b675d37451c0665"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab81210abc6aba845b72ee11d0ca98cd0"><td class="memItemLeft" align="right" valign="top"><a id="ab81210abc6aba845b72ee11d0ca98cd0" name="ab81210abc6aba845b72ee11d0ca98cd0"></a>
+Button&#160;</td><td class="memItemRight" valign="bottom"><b>finishTurnButton</b></td></tr>
+<tr class="memdesc:ab81210abc6aba845b72ee11d0ca98cd0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Кнопка завершения хода.<br /></td></tr>
+<tr class="separator:ab81210abc6aba845b72ee11d0ca98cd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a271b58fcffc4fac12e33d4b7662bdd42"><td class="memItemLeft" align="right" valign="top"><a id="a271b58fcffc4fac12e33d4b7662bdd42" name="a271b58fcffc4fac12e33d4b7662bdd42"></a>
+Button&#160;</td><td class="memItemRight" valign="bottom"><b>agreementButton</b></td></tr>
+<tr class="memdesc:a271b58fcffc4fac12e33d4b7662bdd42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Кнопка соглашений.<br /></td></tr>
+<tr class="separator:a271b58fcffc4fac12e33d4b7662bdd42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b02555cd4912775b0ee36ff1fe5e9a0"><td class="memItemLeft" align="right" valign="top"><a id="a0b02555cd4912775b0ee36ff1fe5e9a0" name="a0b02555cd4912775b0ee36ff1fe5e9a0"></a>
+TMP_Text&#160;</td><td class="memItemRight" valign="bottom"><b>dialoguePanelText</b></td></tr>
+<tr class="memdesc:a0b02555cd4912775b0ee36ff1fe5e9a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Текст диалоговой панели.<br /></td></tr>
+<tr class="separator:a0b02555cd4912775b0ee36ff1fe5e9a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c3c15729117a3ae5e95beaaf9d87f5e"><td class="memItemLeft" align="right" valign="top">TMP_Text&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dialogue_manager.html#a1c3c15729117a3ae5e95beaaf9d87f5e">mainRoomTimerText</a></td></tr>
+<tr class="memdesc:a1c3c15729117a3ae5e95beaaf9d87f5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Текстовое поле таймера в общей комнате. <a href="class_dialogue_manager.html#a1c3c15729117a3ae5e95beaaf9d87f5e">Подробнее...</a><br /></td></tr>
+<tr class="separator:a1c3c15729117a3ae5e95beaaf9d87f5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a770bf970e536f3ab810a12cbb4879acb"><td class="memItemLeft" align="right" valign="top"><a id="a770bf970e536f3ab810a12cbb4879acb" name="a770bf970e536f3ab810a12cbb4879acb"></a>
+TMP_Text&#160;</td><td class="memItemRight" valign="bottom"><b>donationButtonText</b></td></tr>
+<tr class="memdesc:a770bf970e536f3ab810a12cbb4879acb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Текст состояния пожертвования.<br /></td></tr>
+<tr class="separator:a770bf970e536f3ab810a12cbb4879acb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ca0e11c5a356806f92e05a6193b2714"><td class="memItemLeft" align="right" valign="top"><a id="a1ca0e11c5a356806f92e05a6193b2714" name="a1ca0e11c5a356806f92e05a6193b2714"></a>
+Animator&#160;</td><td class="memItemRight" valign="bottom"><b>dialoguePanelAnimator</b></td></tr>
+<tr class="memdesc:a1ca0e11c5a356806f92e05a6193b2714"><td class="mdescLeft">&#160;</td><td class="mdescRight">Аниматор диалоговой панели.<br /></td></tr>
+<tr class="separator:a1ca0e11c5a356806f92e05a6193b2714"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a018dbc3c40c06259a8664618f8e083cb"><td class="memItemLeft" align="right" valign="top"><a id="a018dbc3c40c06259a8664618f8e083cb" name="a018dbc3c40c06259a8664618f8e083cb"></a>
+Animator&#160;</td><td class="memItemRight" valign="bottom"><b>charactersAnimator</b></td></tr>
+<tr class="memdesc:a018dbc3c40c06259a8664618f8e083cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Аниматор персонажей.<br /></td></tr>
+<tr class="separator:a018dbc3c40c06259a8664618f8e083cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59692357ba596bd02ea07f9c0ccb310b"><td class="memItemLeft" align="right" valign="top"><a id="a59692357ba596bd02ea07f9c0ccb310b" name="a59692357ba596bd02ea07f9c0ccb310b"></a>
+Animator&#160;</td><td class="memItemRight" valign="bottom"><b>allShardsDemoFieldAnimator</b></td></tr>
+<tr class="memdesc:a59692357ba596bd02ea07f9c0ccb310b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Аниматор поля для демонстрации всех осколков.<br /></td></tr>
+<tr class="separator:a59692357ba596bd02ea07f9c0ccb310b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa20874c21d4d686c7c5fcdd44b8c4d69"><td class="memItemLeft" align="right" valign="top"><a id="aa20874c21d4d686c7c5fcdd44b8c4d69" name="aa20874c21d4d686c7c5fcdd44b8c4d69"></a>
+Animator&#160;</td><td class="memItemRight" valign="bottom"><b>techTreeAnimator</b></td></tr>
+<tr class="memdesc:aa20874c21d4d686c7c5fcdd44b8c4d69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Аниматор древа технологий.<br /></td></tr>
+<tr class="separator:aa20874c21d4d686c7c5fcdd44b8c4d69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf50ccff92ebcff77f1e92fc2e381f73"><td class="memItemLeft" align="right" valign="top"><a id="adf50ccff92ebcff77f1e92fc2e381f73" name="adf50ccff92ebcff77f1e92fc2e381f73"></a>
+Image&#160;</td><td class="memItemRight" valign="bottom"><b>blackBackground</b></td></tr>
+<tr class="memdesc:adf50ccff92ebcff77f1e92fc2e381f73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Чёрный фон.<br /></td></tr>
+<tr class="separator:adf50ccff92ebcff77f1e92fc2e381f73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18f831e43b25d89249b639d9b37f9911"><td class="memItemLeft" align="right" valign="top"><a id="a18f831e43b25d89249b639d9b37f9911" name="a18f831e43b25d89249b639d9b37f9911"></a>
+Image&#160;</td><td class="memItemRight" valign="bottom"><b>selfArrow</b></td></tr>
+<tr class="memdesc:a18f831e43b25d89249b639d9b37f9911"><td class="mdescLeft">&#160;</td><td class="mdescRight">Собственная стрелка.<br /></td></tr>
+<tr class="separator:a18f831e43b25d89249b639d9b37f9911"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeae9482872f24f7ada979bd8920277ef"><td class="memItemLeft" align="right" valign="top"><a id="aeae9482872f24f7ada979bd8920277ef" name="aeae9482872f24f7ada979bd8920277ef"></a>
+Image&#160;</td><td class="memItemRight" valign="bottom"><b>opponentArrow</b></td></tr>
+<tr class="memdesc:aeae9482872f24f7ada979bd8920277ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Стрелка противника.<br /></td></tr>
+<tr class="separator:aeae9482872f24f7ada979bd8920277ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2941d15c19587b89e97c342ccb5b99f"><td class="memItemLeft" align="right" valign="top"><a id="ad2941d15c19587b89e97c342ccb5b99f" name="ad2941d15c19587b89e97c342ccb5b99f"></a>
+Image&#160;</td><td class="memItemRight" valign="bottom"><b>circleImage</b></td></tr>
+<tr class="memdesc:ad2941d15c19587b89e97c342ccb5b99f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Текущее изображение круга. Круг - кнопка пожертвований.<br /></td></tr>
+<tr class="separator:ad2941d15c19587b89e97c342ccb5b99f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab17f842e57c66b1c0178abcf7adf6f3d"><td class="memItemLeft" align="right" valign="top"><a id="ab17f842e57c66b1c0178abcf7adf6f3d" name="ab17f842e57c66b1c0178abcf7adf6f3d"></a>
+Sprite[]&#160;</td><td class="memItemRight" valign="bottom"><b>circles</b></td></tr>
+<tr class="memdesc:ab17f842e57c66b1c0178abcf7adf6f3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Массив спрайтов из ассетов.<br /></td></tr>
+<tr class="separator:ab17f842e57c66b1c0178abcf7adf6f3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1df83faae54180aa4e269fd24f294d59"><td class="memItemLeft" align="right" valign="top"><a id="a1df83faae54180aa4e269fd24f294d59" name="a1df83faae54180aa4e269fd24f294d59"></a>
+LevelChanger&#160;</td><td class="memItemRight" valign="bottom"><b>levelChanger</b></td></tr>
+<tr class="memdesc:a1df83faae54180aa4e269fd24f294d59"><td class="mdescLeft">&#160;</td><td class="mdescRight">Переключатель уровней.<br /></td></tr>
+<tr class="separator:a1df83faae54180aa4e269fd24f294d59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afee1f335e4349a308f10a906ef91cfff"><td class="memItemLeft" align="right" valign="top"><a id="afee1f335e4349a308f10a906ef91cfff" name="afee1f335e4349a308f10a906ef91cfff"></a>
+<a class="el" href="class_dialogue.html">Dialogue</a>&#160;</td><td class="memItemRight" valign="bottom"><b>dialogue</b></td></tr>
+<tr class="memdesc:afee1f335e4349a308f10a906ef91cfff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Диалог, считанный из XML файла.<br /></td></tr>
+<tr class="separator:afee1f335e4349a308f10a906ef91cfff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d7201046efba27e174a8059ff0397b8"><td class="memItemLeft" align="right" valign="top"><a id="a5d7201046efba27e174a8059ff0397b8" name="a5d7201046efba27e174a8059ff0397b8"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>phraseIndex</b></td></tr>
+<tr class="memdesc:a5d7201046efba27e174a8059ff0397b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Индекс фразы в диалоге.<br /></td></tr>
+<tr class="separator:a5d7201046efba27e174a8059ff0397b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82a2b2c475e892eb676a2e8668308260"><td class="memItemLeft" align="right" valign="top"><a id="a82a2b2c475e892eb676a2e8668308260" name="a82a2b2c475e892eb676a2e8668308260"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>levelIndex</b></td></tr>
+<tr class="memdesc:a82a2b2c475e892eb676a2e8668308260"><td class="mdescLeft">&#160;</td><td class="mdescRight">Индекс сцены в диалоге.<br /></td></tr>
+<tr class="separator:a82a2b2c475e892eb676a2e8668308260"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4491916f1fb391390ef42cc5ecd7f5d1"><td class="memItemLeft" align="right" valign="top"><a id="a4491916f1fb391390ef42cc5ecd7f5d1" name="a4491916f1fb391390ef42cc5ecd7f5d1"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>selectedShardId</b></td></tr>
+<tr class="memdesc:a4491916f1fb391390ef42cc5ecd7f5d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Id выбранного осколка.<br /></td></tr>
+<tr class="separator:a4491916f1fb391390ef42cc5ecd7f5d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
+Закрытые статические данные</h2></td></tr>
+<tr class="memitem:a09f1d22c6c7c296af00fd0c8613555e6"><td class="memItemLeft" align="right" valign="top"><a id="a09f1d22c6c7c296af00fd0c8613555e6" name="a09f1d22c6c7c296af00fd0c8613555e6"></a>
+const float&#160;</td><td class="memItemRight" valign="bottom"><b>textDelay</b> = 0.03f</td></tr>
+<tr class="memdesc:a09f1d22c6c7c296af00fd0c8613555e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Задержка при вылетании символа в тексте.<br /></td></tr>
+<tr class="separator:a09f1d22c6c7c296af00fd0c8613555e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p >Диалоговый менеджер.</p>
+<p >Данный класс отвечает за все диалоги в игре.</p>
+</div><h2 class="groupheader">Методы</h2>
+<a id="a940a9cec4605692d72b0e2e42c891b03" name="a940a9cec4605692d72b0e2e42c891b03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a940a9cec4605692d72b0e2e42c891b03">&#9670;&nbsp;</a></span>AddToBlackBackground()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DialogueManager.AddToBlackBackground </td>
+          <td>(</td>
+          <td class="paramtype">Transform&#160;</td>
+          <td class="paramname"><em>transform</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>worldPositionStays</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Добавить объект на тёмный фон.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">transform</td><td>Объект, который необходимо добавить на тёмный фон.</td></tr>
+    <tr><td class="paramname">worldPositionStays</td><td>Если True, то параметры относительно родителя такие же, что и в мировом пространстве. Оставить ли позицию поля неизменным.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6faf5cd30b8cb6f4aa98be85ff1cb625" name="a6faf5cd30b8cb6f4aa98be85ff1cb625"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6faf5cd30b8cb6f4aa98be85ff1cb625">&#9670;&nbsp;</a></span>ChangeColorDonationButton()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DialogueManager.ChangeColorDonationButton </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>color</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Поменять цвет кнопки пожертвования на указанный.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">color</td><td>Цвет, на который необходимо поменять.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="adf62646bed494bbc272d6b5091e4fe62" name="adf62646bed494bbc272d6b5091e4fe62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf62646bed494bbc272d6b5091e4fe62">&#9670;&nbsp;</a></span>GiveOutAllShardsToField()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DialogueManager.GiveOutAllShardsToField </td>
+          <td>(</td>
+          <td class="paramtype">Transform&#160;</td>
+          <td class="paramname"><em>field</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Выдать все осколки на поле.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">field</td><td>Поле, куда необходимо положить осколки.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a35bbb91c4e71f4004d7e6fa3da091a01" name="a35bbb91c4e71f4004d7e6fa3da091a01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35bbb91c4e71f4004d7e6fa3da091a01">&#9670;&nbsp;</a></span>GiveOutSomeShardsToHand()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DialogueManager.GiveOutSomeShardsToHand </td>
+          <td>(</td>
+          <td class="paramtype">Transform&#160;</td>
+          <td class="paramname"><em>hand</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Выдать несколько осколков в руку.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">hand</td><td>Рука, куда необходимо положить осколки.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="adecf1dbf5711d9e08c9aa570be5c6680" name="adecf1dbf5711d9e08c9aa570be5c6680"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adecf1dbf5711d9e08c9aa570be5c6680">&#9670;&nbsp;</a></span>GiveOutTwoShardsToHand()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DialogueManager.GiveOutTwoShardsToHand </td>
+          <td>(</td>
+          <td class="paramtype">Transform&#160;</td>
+          <td class="paramname"><em>hand</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Выдать два осколка в руку.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">hand</td><td>Рука, куда необходимо положить осколки.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aba8d5567746712fed785d44ccbedbfb7" name="aba8d5567746712fed785d44ccbedbfb7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba8d5567746712fed785d44ccbedbfb7">&#9670;&nbsp;</a></span>OnClickShardToExchange()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DialogueManager.OnClickShardToExchange </td>
+          <td>(</td>
+          <td class="paramtype">Button&#160;</td>
+          <td class="paramname"><em>button</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Событие на нажатие выбора осколка.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">button</td><td>Кнопка, на которую нажал пользователь.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af3bc0f97fadb4b40ae7784d2889b64a3" name="af3bc0f97fadb4b40ae7784d2889b64a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3bc0f97fadb4b40ae7784d2889b64a3">&#9670;&nbsp;</a></span>PlayAnimation() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void DialogueManager.PlayAnimation </td>
+          <td>(</td>
+          <td class="paramtype">Animator&#160;</td>
+          <td class="paramname"><em>animator</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>animationName</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Воспроизвести анимацию.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">animator</td><td>Объект, у которого нужно произвести анимацию.</td></tr>
+    <tr><td class="paramname">animationName</td><td>Название воспроизводимой анимации.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a4e7161c29ec44e87a6e18442410f834a" name="a4e7161c29ec44e87a6e18442410f834a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e7161c29ec44e87a6e18442410f834a">&#9670;&nbsp;</a></span>PlayAnimation() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void DialogueManager.PlayAnimation </td>
+          <td>(</td>
+          <td class="paramtype">Animator&#160;</td>
+          <td class="paramname"><em>animator</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>animationName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>animationState</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Воспроизвести анимацию.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">animator</td><td>Объект, у которого нужно произвести анимацию.</td></tr>
+    <tr><td class="paramname">animationName</td><td>Название воспроизводимой анимации.</td></tr>
+    <tr><td class="paramname">animationState</td><td>Состояние анимации.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a990b8d4499415f467e11c818f9a5a366" name="a990b8d4499415f467e11c818f9a5a366"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a990b8d4499415f467e11c818f9a5a366">&#9670;&nbsp;</a></span>PlayDialogueAnimations()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DialogueManager.PlayDialogueAnimations </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>dpAnimationName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>charAnimationName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>animationState</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Воспроизвести анимации диалога.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dpAnimationName</td><td>Название воспроизводимой анимации диалоговой панели.</td></tr>
+    <tr><td class="paramname">charAnimationName</td><td>Название воспроизводимой анимации персонажа.</td></tr>
+    <tr><td class="paramname">animationState</td><td>Состояние анимации.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a5561da27444c181330d2cf0a77076736" name="a5561da27444c181330d2cf0a77076736"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5561da27444c181330d2cf0a77076736">&#9670;&nbsp;</a></span>RemoveFromBlackBackground()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void DialogueManager.RemoveFromBlackBackground </td>
+          <td>(</td>
+          <td class="paramtype">Transform&#160;</td>
+          <td class="paramname"><em>transform</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Transform&#160;</td>
+          <td class="paramname"><em>place</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>worldPositionStays</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Убрать объект из тёмного фона.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">transform</td><td>Объект, который необходимо убрать из тёмного фона.</td></tr>
+    <tr><td class="paramname">place</td><td>Место, куда необходимо поместить объект.</td></tr>
+    <tr><td class="paramname">worldPositionStays</td><td>Если True, то параметры относительно родителя такие же, что и в мировом пространстве. Оставить ли позицию поля неизменным.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a14d5dec8261ce21a94175b1dd6dcdff8" name="a14d5dec8261ce21a94175b1dd6dcdff8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14d5dec8261ce21a94175b1dd6dcdff8">&#9670;&nbsp;</a></span>SwitchButtons()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DialogueManager.SwitchButtons </td>
+          <td>(</td>
+          <td class="paramtype">Button[]&#160;</td>
+          <td class="paramname"><em>buttons</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>enabled</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Переключить кнопки.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">buttons</td><td>Кнопки, которые нужно переключить.</td></tr>
+    <tr><td class="paramname">enabled</td><td>Если True (false) - то включаем (выключаем) кнопки.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a7c032fa11d5da23cc25e0b8feeb3d2f9" name="a7c032fa11d5da23cc25e0b8feeb3d2f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c032fa11d5da23cc25e0b8feeb3d2f9">&#9670;&nbsp;</a></span>WriteSentence()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">IEnumerator DialogueManager.WriteSentence </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>sentence</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Корутина, которая пишет предложение на диалоговой панели.</p>
+<p >Корутина выдаёт по одному символу с определённой задержкой.</p>
+<dl class="section return"><dt>Возвращает</dt><dd>Возвращает предложение, которое отображается на диалоговой панели.</dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Данные класса</h2>
+<a id="a1c3c15729117a3ae5e95beaaf9d87f5e" name="a1c3c15729117a3ae5e95beaaf9d87f5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c3c15729117a3ae5e95beaaf9d87f5e">&#9670;&nbsp;</a></span>mainRoomTimerText</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">TMP_Text DialogueManager.mainRoomTimerText</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Текстовое поле таймера в общей комнате.</p>
+<p >Сообщает игрокам оставшееся время до перемещения в переговорную комнату.</p>
+
+</div>
+</div>
+<a id="abd39475a6dbf740175b09c9d57632ca8" name="abd39475a6dbf740175b09c9d57632ca8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd39475a6dbf740175b09c9d57632ca8">&#9670;&nbsp;</a></span>thirdTechnology</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Transform DialogueManager.thirdTechnology</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Третья технология.</p>
+<p >Эту технологию мы подсвечиваем в обучении.</p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов класса находятся в файле:<ul>
+<li>E:/Programming/Unity/MIEMProject/Documentation/Code/DialogueManager.cs</li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

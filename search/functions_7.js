@@ -1,0 +1,25 @@
+var searchData=
+[
+  ['increasefreeagreement_0',['IncreaseFreeAgreement',['../class_castle.html#a07fc863dfb45290bf8aadf093ce01b08',1,'Castle']]],
+  ['increasenestedsealscount_1',['IncreaseNestedSealsCount',['../class_hint.html#ab6a50fb99b5c07c485106d951d12a8a0',1,'Hint']]],
+  ['increasenumberofagreements_2',['IncreaseNumberOfAgreements',['../class_castle.html#abeeff88ccb6f1911b69c8e7d5b587106',1,'Castle.IncreaseNumberOfAgreements()'],['../class_game_manager.html#ad7cef9b75e3048ab7d89d7d7a4915e4a',1,'GameManager.IncreaseNumberOfAgreements()']]],
+  ['increasenumberofcorrectdonations_3',['IncreaseNumberOfCorrectDonations',['../class_castle.html#a81b382e4aca429a65cf4d140e0554bd5',1,'Castle.IncreaseNumberOfCorrectDonations()'],['../class_game_manager.html#a4383ea665e76a84b0119e228fd109e0e',1,'GameManager.IncreaseNumberOfCorrectDonations()']]],
+  ['increasenumberofdeceptions_4',['IncreaseNumberOfDeceptions',['../class_castle.html#ab0e0eef469937ef0cbdb65ddbf7d7af0',1,'Castle.IncreaseNumberOfDeceptions()'],['../class_drop_place.html#a8e35dcab1e42400ff414e5c3cdb771fb',1,'DropPlace.IncreaseNumberOfDeceptions()']]],
+  ['increasenumberofexchanges_5',['IncreaseNumberOfExchanges',['../class_castle.html#a7b0a9fffe26a31b3f8ed3f00a53bfa5f',1,'Castle.IncreaseNumberOfExchanges()'],['../class_game_manager.html#aab6069b030cabb024c9687305bc48f54',1,'GameManager.IncreaseNumberOfExchanges()']]],
+  ['increasenumberofskippingmoves_6',['IncreaseNumberOfSkippingMoves',['../class_castle.html#ac1f6ca26c68059c9350ef75a3feb511f',1,'Castle.IncreaseNumberOfSkippingMoves()'],['../class_game_manager.html#a9dcbe462fb7668a8c3c06492839c2a3e',1,'GameManager.IncreaseNumberOfSkippingMoves()']]],
+  ['increasenumberofwrongdonations_7',['IncreaseNumberOfWrongDonations',['../class_castle.html#ad5a661c24341e0d07cc0c69e7c3da0f9',1,'Castle.IncreaseNumberOfWrongDonations()'],['../class_game_manager.html#a0634f4e0db5faf42b87d08abf8db164b',1,'GameManager.IncreaseNumberOfWrongDonations()']]],
+  ['increasescale_8',['IncreaseScale',['../class_adept.html#aaf6ec9e6a4a97c68903e005507444df1',1,'Adept']]],
+  ['increasesealscount_9',['IncreaseSealsCount',['../class_crystal_altar.html#a9dc3c5c23da454ade4af3334ac7194cc',1,'CrystalAltar']]],
+  ['initialize_10',['Initialize',['../class_elements_test.html#a2ea548e3f2df81da8b145d0de29a2d91',1,'ElementsTest.Initialize()'],['../class_mini_game.html#a88948283240cf9605929a2e011ed11a0',1,'MiniGame.Initialize()']]],
+  ['initializeconversation_11',['InitializeConversation',['../class_game_manager.html#ae241eb912d855337fa49eed4354506fe',1,'GameManager']]],
+  ['initializecrystalaltar_12',['InitializeCrystalAltar',['../class_second_stage.html#afa862c87c7b780a8dd0353acdd122f24',1,'SecondStage']]],
+  ['initializegame_13',['InitializeGame',['../class_game_interface.html#a4726f6fbe9d01c3469ee469caae767ae',1,'GameInterface.InitializeGame()'],['../class_game_manager.html#a1d8f940d906d17fad095dcb5d003f231',1,'GameManager.InitializeGame()'],['../class_initializing_scene.html#afbfbcde8425e83cc8d9a4911db6d7a01',1,'InitializingScene.InitializeGame()']]],
+  ['initializetest_14',['InitializeTest',['../class_crystal_altar.html#a4069d6bddfefdc76bf1e66a6288ded9a',1,'CrystalAltar']]],
+  ['initializetests_15',['InitializeTests',['../class_second_stage.html#a5953ce5d72c047c2f1aa454ebb09de63',1,'SecondStage']]],
+  ['initializetextchatfirststage_16',['InitializeTextChatFirstStage',['../class_chat.html#ad4d0bc18a885c918d2d220d9c674dd34',1,'Chat']]],
+  ['initializetutorial_17',['InitializeTutorial',['../class_dialogue_manager.html#a2cf19919daf50cc1646f1476fac5dc6a',1,'DialogueManager']]],
+  ['initializeuniquegroups_18',['InitializeUniqueGroups',['../class_game_manager.html#a4548c62b454694cdc139f7a192bc1f7d',1,'GameManager']]],
+  ['isdonationcorrect_19',['IsDonationCorrect',['../class_game_manager.html#ab7872f7fe634ccec1467531a31bfee31',1,'GameManager']]],
+  ['isselectionofshardscomplete_20',['IsSelectionOfShardsComplete',['../class_game_manager.html#afb630016c004f8144f935d6533b19948',1,'GameManager']]],
+  ['isshardunique_21',['IsShardUnique',['../class_game_manager.html#a27c4306a4cbc5edb8531f7c14f076c32',1,'GameManager']]]
+];

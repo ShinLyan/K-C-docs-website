@@ -1,0 +1,2266 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Kingdom&amp;Castles: Класс GameManager</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="index.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">Kingdom&amp;Castles
+   </div>
+   <div id="projectbrief">Игра представляет собой пошаговую онлайн стратегию, в которой игрокам необходимо вернуть «Священное знание», изучая различные технологии путем сбора и комбинирования различных «Осколков истины».</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Открытые типы</a> &#124;
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pub-static-methods">Открытые статические члены</a> &#124;
+<a href="#properties">Свойства</a> &#124;
+<a href="#pri-methods">Закрытые члены</a> &#124;
+<a href="#pri-static-methods">Закрытые статические члены</a> &#124;
+<a href="#pri-attribs">Закрытые данные</a> &#124;
+<a href="#pri-static-attribs">Закрытые статические данные</a> &#124;
+<a href="class_game_manager-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle"><div class="title">Класс GameManager</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Игровой менеджер. 
+ <a href="class_game_manager.html#details">Подробнее...</a></p>
+<div class="dynheader">
+Граф наследования:GameManager:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_game_manager.png" alt=""/>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Открытые типы</h2></td></tr>
+<tr class="memitem:ad5ef86acba1e705a15aa6bc69238309a"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_manager.html#ad5ef86acba1e705a15aa6bc69238309a">ColorDonationButton</a> { <a class="el" href="class_game_manager.html#ad5ef86acba1e705a15aa6bc69238309aaee38e4d5dd68c4e440825018d549cb47">Red</a>
+, <a class="el" href="class_game_manager.html#ad5ef86acba1e705a15aa6bc69238309aad382816a3cbeed082c9e216e7392eed1">Green</a>
+, <a class="el" href="class_game_manager.html#ad5ef86acba1e705a15aa6bc69238309aa7d2b88f5977b8a31c6193b4c81a43daf">Golden</a>
+ }</td></tr>
+<tr class="memdesc:ad5ef86acba1e705a15aa6bc69238309a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Тип персонажа (я или противник). <a href="class_game_manager.html#ad5ef86acba1e705a15aa6bc69238309a">Подробнее...</a><br /></td></tr>
+<tr class="separator:ad5ef86acba1e705a15aa6bc69238309a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34e5ed9b843a73ba45ae75ad1e850dd4"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_manager.html#a34e5ed9b843a73ba45ae75ad1e850dd4">ArrowState</a> { <a class="el" href="class_game_manager.html#a34e5ed9b843a73ba45ae75ad1e850dd4a9aa76d8a9f8e25e87dbcafc7aaf556fc">filled</a>
+, <a class="el" href="class_game_manager.html#a34e5ed9b843a73ba45ae75ad1e850dd4aa2e4822a98337283e39f7b60acf85ec9">empty</a>
+ }</td></tr>
+<tr class="memdesc:a34e5ed9b843a73ba45ae75ad1e850dd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Состояние стрелки. <a href="class_game_manager.html#a34e5ed9b843a73ba45ae75ad1e850dd4">Подробнее...</a><br /></td></tr>
+<tr class="separator:a34e5ed9b843a73ba45ae75ad1e850dd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a45fad272abf54dd2fce5666b852da455"><td class="memItemLeft" align="right" valign="top"><a id="a45fad272abf54dd2fce5666b852da455" name="a45fad272abf54dd2fce5666b852da455"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnClickMakeAgreement</b> ()</td></tr>
+<tr class="memdesc:a45fad272abf54dd2fce5666b852da455"><td class="mdescLeft">&#160;</td><td class="mdescRight">Событие на нажатие кнопки "Соглашение".<br /></td></tr>
+<tr class="separator:a45fad272abf54dd2fce5666b852da455"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbd7251f8bd002e332fdea8046c052c6"><td class="memItemLeft" align="right" valign="top"><a id="adbd7251f8bd002e332fdea8046c052c6" name="adbd7251f8bd002e332fdea8046c052c6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnClickDeclineAgreement</b> ()</td></tr>
+<tr class="memdesc:adbd7251f8bd002e332fdea8046c052c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Событие на нажатие кнопки "Отказать" в соглашении.<br /></td></tr>
+<tr class="separator:adbd7251f8bd002e332fdea8046c052c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae241eb912d855337fa49eed4354506fe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_manager.html#ae241eb912d855337fa49eed4354506fe">InitializeConversation</a> (<a class="el" href="class_castle.html">Castle</a> opponentCastle)</td></tr>
+<tr class="memdesc:ae241eb912d855337fa49eed4354506fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Инициализация переговоров. <a href="class_game_manager.html#ae241eb912d855337fa49eed4354506fe">Подробнее...</a><br /></td></tr>
+<tr class="separator:ae241eb912d855337fa49eed4354506fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8624e7c4220187bd4a59a27978f49b6c"><td class="memItemLeft" align="right" valign="top"><a id="a8624e7c4220187bd4a59a27978f49b6c" name="a8624e7c4220187bd4a59a27978f49b6c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnClickSkip</b> ()</td></tr>
+<tr class="memdesc:a8624e7c4220187bd4a59a27978f49b6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Событие на нажатие кнопки "Пропустить".<br /></td></tr>
+<tr class="separator:a8624e7c4220187bd4a59a27978f49b6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d97afc45a82a2c846ff6802a4843f35"><td class="memItemLeft" align="right" valign="top"><a id="a6d97afc45a82a2c846ff6802a4843f35" name="a6d97afc45a82a2c846ff6802a4843f35"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnClickFinishTurn</b> ()</td></tr>
+<tr class="memdesc:a6d97afc45a82a2c846ff6802a4843f35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Событие на нажатие кнопки "Завершить ход".<br /></td></tr>
+<tr class="separator:a6d97afc45a82a2c846ff6802a4843f35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3d1ccd886dd163189822df63be58034"><td class="memItemLeft" align="right" valign="top"><a id="ae3d1ccd886dd163189822df63be58034" name="ae3d1ccd886dd163189822df63be58034"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnClickSelfArrow</b> ()</td></tr>
+<tr class="memdesc:ae3d1ccd886dd163189822df63be58034"><td class="mdescLeft">&#160;</td><td class="mdescRight">Событие на нажатие собственной стрелки.<br /></td></tr>
+<tr class="separator:ae3d1ccd886dd163189822df63be58034"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60874fdbfd28e4c932db25982134ce8b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_manager.html#a60874fdbfd28e4c932db25982134ce8b">OnClickShardToExchange</a> (Button button)</td></tr>
+<tr class="memdesc:a60874fdbfd28e4c932db25982134ce8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Событие на нажатие выбора осколка. <a href="class_game_manager.html#a60874fdbfd28e4c932db25982134ce8b">Подробнее...</a><br /></td></tr>
+<tr class="separator:a60874fdbfd28e4c932db25982134ce8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5d6f6854ddec49fcf70803d9ce7f746"><td class="memItemLeft" align="right" valign="top"><a id="ab5d6f6854ddec49fcf70803d9ce7f746" name="ab5d6f6854ddec49fcf70803d9ce7f746"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnClickDonation</b> ()</td></tr>
+<tr class="memdesc:ab5d6f6854ddec49fcf70803d9ce7f746"><td class="mdescLeft">&#160;</td><td class="mdescRight">Событие на нажатие кнопки "Пожертвование".<br /></td></tr>
+<tr class="separator:ab5d6f6854ddec49fcf70803d9ce7f746"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a402c21aeed5894f1b17cd371ab95c2e5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_manager.html#a402c21aeed5894f1b17cd371ab95c2e5">OnEvent</a> (EventData photonEvent)</td></tr>
+<tr class="memdesc:a402c21aeed5894f1b17cd371ab95c2e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Метод интерфейса IOnEventCallback - обработчик обратного вызова. <a href="class_game_manager.html#a402c21aeed5894f1b17cd371ab95c2e5">Подробнее...</a><br /></td></tr>
+<tr class="separator:a402c21aeed5894f1b17cd371ab95c2e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f7e3ac8f9ae04fd8e9e01956a88faac"><td class="memItemLeft" align="right" valign="top"><a id="a5f7e3ac8f9ae04fd8e9e01956a88faac" name="a5f7e3ac8f9ae04fd8e9e01956a88faac"></a>
+override void&#160;</td><td class="memItemRight" valign="bottom"><b>OnLeftRoom</b> ()</td></tr>
+<tr class="memdesc:a5f7e3ac8f9ae04fd8e9e01956a88faac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Метод вызывается при выходе игрока из комнаты, перемещает его в главное меню.<br /></td></tr>
+<tr class="separator:a5f7e3ac8f9ae04fd8e9e01956a88faac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Открытые статические члены</h2></td></tr>
+<tr class="memitem:aa7b43a083387f3eee81da0c3670d0ba0"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_manager.html#aa7b43a083387f3eee81da0c3670d0ba0">UpdateTimer</a> (float timerLeft, TMP_Text timerText)</td></tr>
+<tr class="memdesc:aa7b43a083387f3eee81da0c3670d0ba0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обновить таймер. <a href="class_game_manager.html#aa7b43a083387f3eee81da0c3670d0ba0">Подробнее...</a><br /></td></tr>
+<tr class="separator:aa7b43a083387f3eee81da0c3670d0ba0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d1fe77c94a4143d549093864386934b"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_manager.html#a4d1fe77c94a4143d549093864386934b">ClearField</a> (Transform field)</td></tr>
+<tr class="memdesc:a4d1fe77c94a4143d549093864386934b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Очистить поле. <a href="class_game_manager.html#a4d1fe77c94a4143d549093864386934b">Подробнее...</a><br /></td></tr>
+<tr class="separator:a4d1fe77c94a4143d549093864386934b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2da0bc2ba35f17e347a78d1ed0fcd030"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_manager.html#a2da0bc2ba35f17e347a78d1ed0fcd030">ChangeStateArrow</a> (Image arrow, <a class="el" href="class_game_manager.html#a34e5ed9b843a73ba45ae75ad1e850dd4">ArrowState</a> arrowState)</td></tr>
+<tr class="memdesc:a2da0bc2ba35f17e347a78d1ed0fcd030"><td class="mdescLeft">&#160;</td><td class="mdescRight">Поменять состояние стрелки. <a href="class_game_manager.html#a2da0bc2ba35f17e347a78d1ed0fcd030">Подробнее...</a><br /></td></tr>
+<tr class="separator:a2da0bc2ba35f17e347a78d1ed0fcd030"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad51f3ed00d53edcd55f21892ea12d0c2"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_manager.html#ad51f3ed00d53edcd55f21892ea12d0c2">DisableShardsButtons</a> (Button pressedButton, Button[] <a class="el" href="class_game_manager.html#ab313406fda7bb75d107c47f92cc7db63">shardsToExchange</a>)</td></tr>
+<tr class="memdesc:ad51f3ed00d53edcd55f21892ea12d0c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Отключить кнопки осколков выбора кроме нажатой. <a href="class_game_manager.html#ad51f3ed00d53edcd55f21892ea12d0c2">Подробнее...</a><br /></td></tr>
+<tr class="separator:ad51f3ed00d53edcd55f21892ea12d0c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a083c771df940a1c938e037ed7fa97ce7"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_manager.html#a083c771df940a1c938e037ed7fa97ce7">CheckReadinessOfCastlesToExchange</a> ()</td></tr>
+<tr class="memdesc:a083c771df940a1c938e037ed7fa97ce7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверка готовности замков к обмену. <a href="class_game_manager.html#a083c771df940a1c938e037ed7fa97ce7">Подробнее...</a><br /></td></tr>
+<tr class="separator:a083c771df940a1c938e037ed7fa97ce7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56e397f9803acb5978aed72e4349b728"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_manager.html#a56e397f9803acb5978aed72e4349b728">CheckOpponentDonation</a> ()</td></tr>
+<tr class="memdesc:a56e397f9803acb5978aed72e4349b728"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверка - сделал ли противник пожертвование. <a href="class_game_manager.html#a56e397f9803acb5978aed72e4349b728">Подробнее...</a><br /></td></tr>
+<tr class="separator:a56e397f9803acb5978aed72e4349b728"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aadd15b3221a311307e171959f48bda6a"><td class="memItemLeft" align="right" valign="top"><a id="aadd15b3221a311307e171959f48bda6a" name="aadd15b3221a311307e171959f48bda6a"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>ResetCastleParameters</b> ()</td></tr>
+<tr class="memdesc:aadd15b3221a311307e171959f48bda6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сброс параметров замка.<br /></td></tr>
+<tr class="separator:aadd15b3221a311307e171959f48bda6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5eaa56c9c7572eef650487271c39acc1"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_manager.html#a5eaa56c9c7572eef650487271c39acc1">SwitchButtons</a> (Button[] buttons, bool isEnable)</td></tr>
+<tr class="memdesc:a5eaa56c9c7572eef650487271c39acc1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Переключить кнопки. <a href="class_game_manager.html#a5eaa56c9c7572eef650487271c39acc1">Подробнее...</a><br /></td></tr>
+<tr class="separator:a5eaa56c9c7572eef650487271c39acc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a550838959840984e22a9285e01481b75"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_manager.html#a550838959840984e22a9285e01481b75">SwitchButton</a> (Button button, bool isEnable)</td></tr>
+<tr class="memdesc:a550838959840984e22a9285e01481b75"><td class="mdescLeft">&#160;</td><td class="mdescRight">Переключить кнопку. <a href="class_game_manager.html#a550838959840984e22a9285e01481b75">Подробнее...</a><br /></td></tr>
+<tr class="separator:a550838959840984e22a9285e01481b75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5419a6b9454a1f2fae68153a84d6678d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_manager.html#a5419a6b9454a1f2fae68153a84d6678d">AddGhostShard</a> (GameObject <a class="el" href="class_game_manager.html#a848e69b05781b9811503a346b9af010a">shardPref</a>, Transform field, <a class="el" href="class_shard.html">Shard</a> shard)</td></tr>
+<tr class="memdesc:a5419a6b9454a1f2fae68153a84d6678d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавить осколок-призрак на поле. <a href="class_game_manager.html#a5419a6b9454a1f2fae68153a84d6678d">Подробнее...</a><br /></td></tr>
+<tr class="separator:a5419a6b9454a1f2fae68153a84d6678d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed1beee4e855045181986dbd1bf7f7ae"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_manager.html#aed1beee4e855045181986dbd1bf7f7ae">CheckWinner</a> ()</td></tr>
+<tr class="memdesc:aed1beee4e855045181986dbd1bf7f7ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверка на наличие победителя. <a href="class_game_manager.html#aed1beee4e855045181986dbd1bf7f7ae">Подробнее...</a><br /></td></tr>
+<tr class="separator:aed1beee4e855045181986dbd1bf7f7ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e65e305d914e33efe5c4227b51ca83e"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_manager.html#a5e65e305d914e33efe5c4227b51ca83e">RemoveShardInSelfHand</a> (int shardId)</td></tr>
+<tr class="memdesc:a5e65e305d914e33efe5c4227b51ca83e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обновить собственную руку с осколками. <a href="class_game_manager.html#a5e65e305d914e33efe5c4227b51ca83e">Подробнее...</a><br /></td></tr>
+<tr class="separator:a5e65e305d914e33efe5c4227b51ca83e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="properties" name="properties"></a>
+Свойства</h2></td></tr>
+<tr class="memitem:ad482f0a9eaa547f5e9e7cfed6e554403"><td class="memItemLeft" align="right" valign="top"><a id="ad482f0a9eaa547f5e9e7cfed6e554403" name="ad482f0a9eaa547f5e9e7cfed6e554403"></a>
+static int[][]&#160;</td><td class="memItemRight" valign="bottom"><b>AllUniqueGroups</b><code> [get, private set]</code></td></tr>
+<tr class="memdesc:ad482f0a9eaa547f5e9e7cfed6e554403"><td class="mdescLeft">&#160;</td><td class="mdescRight">Массив со со всеми группами, дублированными для пары игроков.<br /></td></tr>
+<tr class="separator:ad482f0a9eaa547f5e9e7cfed6e554403"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ff33c8f0c17c22e34fd0e95885e184b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_manager.html#a2ff33c8f0c17c22e34fd0e95885e184b">RoundsLeft</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a2ff33c8f0c17c22e34fd0e95885e184b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Количество оставшихся раундов. <a href="class_game_manager.html#a2ff33c8f0c17c22e34fd0e95885e184b">Подробнее...</a><br /></td></tr>
+<tr class="separator:a2ff33c8f0c17c22e34fd0e95885e184b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1f73ceb0bfe9ff6050930f72dbef585"><td class="memItemLeft" align="right" valign="top"><a id="af1f73ceb0bfe9ff6050930f72dbef585" name="af1f73ceb0bfe9ff6050930f72dbef585"></a>
+static <a class="el" href="class_castle.html">Castle</a>&#160;</td><td class="memItemRight" valign="bottom"><b>SelfCastle</b><code> [get, private set]</code></td></tr>
+<tr class="memdesc:af1f73ceb0bfe9ff6050930f72dbef585"><td class="mdescLeft">&#160;</td><td class="mdescRight">Собственный замок.<br /></td></tr>
+<tr class="separator:af1f73ceb0bfe9ff6050930f72dbef585"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac77495c2ff98174b856870e805586352"><td class="memItemLeft" align="right" valign="top"><a id="ac77495c2ff98174b856870e805586352" name="ac77495c2ff98174b856870e805586352"></a>
+static <a class="el" href="class_castle.html">Castle</a>&#160;</td><td class="memItemRight" valign="bottom"><b>OpponentCastle</b><code> [get, private set]</code></td></tr>
+<tr class="memdesc:ac77495c2ff98174b856870e805586352"><td class="mdescLeft">&#160;</td><td class="mdescRight">Замок противника.<br /></td></tr>
+<tr class="separator:ac77495c2ff98174b856870e805586352"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45bfe313ce7becbd9d282e2e77dbc6f5"><td class="memItemLeft" align="right" valign="top"><a id="a45bfe313ce7becbd9d282e2e77dbc6f5" name="a45bfe313ce7becbd9d282e2e77dbc6f5"></a>
+static <a class="el" href="class_castle.html">Castle</a>[]&#160;</td><td class="memItemRight" valign="bottom"><b>Castles</b><code> [get, private set]</code></td></tr>
+<tr class="memdesc:a45bfe313ce7becbd9d282e2e77dbc6f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Массив всех замков.<br /></td></tr>
+<tr class="separator:a45bfe313ce7becbd9d282e2e77dbc6f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b29bb44dc1f79ca53a2909c2c4ec611"><td class="memItemLeft" align="right" valign="top"><a id="a8b29bb44dc1f79ca53a2909c2c4ec611" name="a8b29bb44dc1f79ca53a2909c2c4ec611"></a>
+string&#160;</td><td class="memItemRight" valign="bottom"><b>OpponentNickname</b><code> [get]</code></td></tr>
+<tr class="memdesc:a8b29bb44dc1f79ca53a2909c2c4ec611"><td class="mdescLeft">&#160;</td><td class="mdescRight">Название замка противника.<br /></td></tr>
+<tr class="separator:a8b29bb44dc1f79ca53a2909c2c4ec611"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b7c492aff5386f0f285edaca839f8cd"><td class="memItemLeft" align="right" valign="top"><a id="a8b7c492aff5386f0f285edaca839f8cd" name="a8b7c492aff5386f0f285edaca839f8cd"></a>
+static List&lt; <a class="el" href="class_shard.html">Shard</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>SelfHandShards</b><code> [get, set]</code></td></tr>
+<tr class="memdesc:a8b7c492aff5386f0f285edaca839f8cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Список осколков в собственной руке.<br /></td></tr>
+<tr class="separator:a8b7c492aff5386f0f285edaca839f8cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ec7696b832d924ae4f229c498e5dbfb"><td class="memItemLeft" align="right" valign="top"><a id="a9ec7696b832d924ae4f229c498e5dbfb" name="a9ec7696b832d924ae4f229c498e5dbfb"></a>
+List&lt; <a class="el" href="class_shard.html">Shard</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>OpponentHandShards</b><code> [get, set]</code></td></tr>
+<tr class="memdesc:a9ec7696b832d924ae4f229c498e5dbfb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Список осколков в руке противника.<br /></td></tr>
+<tr class="separator:a9ec7696b832d924ae4f229c498e5dbfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Закрытые члены</h2></td></tr>
+<tr class="memitem:ae04393cb9be335904ffbf5bdc32f5b5f"><td class="memItemLeft" align="right" valign="top"><a id="ae04393cb9be335904ffbf5bdc32f5b5f" name="ae04393cb9be335904ffbf5bdc32f5b5f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SendDataToDatabase</b> ()</td></tr>
+<tr class="memdesc:ae04393cb9be335904ffbf5bdc32f5b5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Отправка данных в БД.<br /></td></tr>
+<tr class="separator:ae04393cb9be335904ffbf5bdc32f5b5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ccfacd027ad08eeb4ff1f25a7f59c98"><td class="memItemLeft" align="right" valign="top"><a id="a5ccfacd027ad08eeb4ff1f25a7f59c98" name="a5ccfacd027ad08eeb4ff1f25a7f59c98"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Start</b> ()</td></tr>
+<tr class="memdesc:a5ccfacd027ad08eeb4ff1f25a7f59c98"><td class="mdescLeft">&#160;</td><td class="mdescRight">При старте инициализируем игру и выдаём игрокам осколки.<br /></td></tr>
+<tr class="separator:a5ccfacd027ad08eeb4ff1f25a7f59c98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d8f940d906d17fad095dcb5d003f231"><td class="memItemLeft" align="right" valign="top"><a id="a1d8f940d906d17fad095dcb5d003f231" name="a1d8f940d906d17fad095dcb5d003f231"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>InitializeGame</b> ()</td></tr>
+<tr class="memdesc:a1d8f940d906d17fad095dcb5d003f231"><td class="mdescLeft">&#160;</td><td class="mdescRight">Инициализация игры.<br /></td></tr>
+<tr class="separator:a1d8f940d906d17fad095dcb5d003f231"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aade3eebb35df3ac5cd0c9e963ee0582d"><td class="memItemLeft" align="right" valign="top"><a id="aade3eebb35df3ac5cd0c9e963ee0582d" name="aade3eebb35df3ac5cd0c9e963ee0582d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetSelfCastleNickname</b> ()</td></tr>
+<tr class="memdesc:aade3eebb35df3ac5cd0c9e963ee0582d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установка названий своего замка.<br /></td></tr>
+<tr class="separator:aade3eebb35df3ac5cd0c9e963ee0582d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88e3df7501cc5bfd79cf9b515432c840"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_manager.html#a88e3df7501cc5bfd79cf9b515432c840">GiveHandShards</a> (Transform hand, int count)</td></tr>
+<tr class="memdesc:a88e3df7501cc5bfd79cf9b515432c840"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдача осколков в руки замков. <a href="class_game_manager.html#a88e3df7501cc5bfd79cf9b515432c840">Подробнее...</a><br /></td></tr>
+<tr class="separator:a88e3df7501cc5bfd79cf9b515432c840"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65b4d54ed35b38fbcfa1d7a23a4d28f6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_shard.html">Shard</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_manager.html#a65b4d54ed35b38fbcfa1d7a23a4d28f6">PullShardFromDeck</a> ()</td></tr>
+<tr class="memdesc:a65b4d54ed35b38fbcfa1d7a23a4d28f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Достать осколок из общей колоды. <a href="class_game_manager.html#a65b4d54ed35b38fbcfa1d7a23a4d28f6">Подробнее...</a><br /></td></tr>
+<tr class="separator:a65b4d54ed35b38fbcfa1d7a23a4d28f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a8b4a861b3e6191456005a5c8a994b0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_manager.html#a6a8b4a861b3e6191456005a5c8a994b0">GetRandomShardIndex</a> ()</td></tr>
+<tr class="memdesc:a6a8b4a861b3e6191456005a5c8a994b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить случайный индекс осколка из колоды. <a href="class_game_manager.html#a6a8b4a861b3e6191456005a5c8a994b0">Подробнее...</a><br /></td></tr>
+<tr class="separator:a6a8b4a861b3e6191456005a5c8a994b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad227f115e1ed4cc0504ffc30b6567184"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_manager.html#ad227f115e1ed4cc0504ffc30b6567184">GiveShardToHand</a> (Transform hand, <a class="el" href="class_shard.html">Shard</a> shard)</td></tr>
+<tr class="memdesc:ad227f115e1ed4cc0504ffc30b6567184"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выдать осколок в руку замка. <a href="class_game_manager.html#ad227f115e1ed4cc0504ffc30b6567184">Подробнее...</a><br /></td></tr>
+<tr class="separator:ad227f115e1ed4cc0504ffc30b6567184"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27c4306a4cbc5edb8531f7c14f076c32"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_manager.html#a27c4306a4cbc5edb8531f7c14f076c32">IsShardUnique</a> (List&lt; <a class="el" href="class_shard.html">Shard</a> &gt; hand, <a class="el" href="class_shard.html">Shard</a> shard)</td></tr>
+<tr class="memdesc:a27c4306a4cbc5edb8531f7c14f076c32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверка на уникальность осколка. <a href="class_game_manager.html#a27c4306a4cbc5edb8531f7c14f076c32">Подробнее...</a><br /></td></tr>
+<tr class="separator:a27c4306a4cbc5edb8531f7c14f076c32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae85619e5747c08dcbc9581f4757037ef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_manager.html#ae85619e5747c08dcbc9581f4757037ef">AddNewShardToHand</a> (Transform hand, <a class="el" href="class_shard.html">Shard</a> shard)</td></tr>
+<tr class="memdesc:ae85619e5747c08dcbc9581f4757037ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вернуть осколок в руку. <a href="class_game_manager.html#ae85619e5747c08dcbc9581f4757037ef">Подробнее...</a><br /></td></tr>
+<tr class="separator:ae85619e5747c08dcbc9581f4757037ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acec91f54d58929750a68b5b1219e28cc"><td class="memItemLeft" align="right" valign="top"><a id="acec91f54d58929750a68b5b1219e28cc" name="acec91f54d58929750a68b5b1219e28cc"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>CreateOrJoinAgreement</b> ()</td></tr>
+<tr class="memdesc:acec91f54d58929750a68b5b1219e28cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создание соглашения или добавление игрока в текущий.<br /></td></tr>
+<tr class="separator:acec91f54d58929750a68b5b1219e28cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff367cff7801e812a409d063b7441e15"><td class="memItemLeft" align="right" valign="top"><a id="aff367cff7801e812a409d063b7441e15" name="aff367cff7801e812a409d063b7441e15"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>RefreshCastles</b> ()</td></tr>
+<tr class="memdesc:aff367cff7801e812a409d063b7441e15"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обновление списка замков.<br /></td></tr>
+<tr class="separator:aff367cff7801e812a409d063b7441e15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b2546dc001de58a4f2e1c81d26f7ea5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_manager.html#a9b2546dc001de58a4f2e1c81d26f7ea5">SetCastleGroups</a> ()</td></tr>
+<tr class="memdesc:a9b2546dc001de58a4f2e1c81d26f7ea5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить группы замкам. <a href="class_game_manager.html#a9b2546dc001de58a4f2e1c81d26f7ea5">Подробнее...</a><br /></td></tr>
+<tr class="separator:a9b2546dc001de58a4f2e1c81d26f7ea5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4548c62b454694cdc139f7a192bc1f7d"><td class="memItemLeft" align="right" valign="top"><a id="a4548c62b454694cdc139f7a192bc1f7d" name="a4548c62b454694cdc139f7a192bc1f7d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>InitializeUniqueGroups</b> ()</td></tr>
+<tr class="memdesc:a4548c62b454694cdc139f7a192bc1f7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Инициализация массива уникальных номеров групп для разбиения игроков по комнатам.<br /></td></tr>
+<tr class="separator:a4548c62b454694cdc139f7a192bc1f7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44c79b205dec16bfe650e21259860c5b"><td class="memItemLeft" align="right" valign="top"><a id="a44c79b205dec16bfe650e21259860c5b" name="a44c79b205dec16bfe650e21259860c5b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Update</b> ()</td></tr>
+<tr class="memdesc:a44c79b205dec16bfe650e21259860c5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Метод используется для отсчёта таймеров.<br /></td></tr>
+<tr class="separator:a44c79b205dec16bfe650e21259860c5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94dcc1308ef3c6bae322b8069083da4b"><td class="memItemLeft" align="right" valign="top"><a id="a94dcc1308ef3c6bae322b8069083da4b" name="a94dcc1308ef3c6bae322b8069083da4b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>MakeGroups</b> ()</td></tr>
+<tr class="memdesc:a94dcc1308ef3c6bae322b8069083da4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Разбиение игроков на пары в переговорных комнатах.<br /></td></tr>
+<tr class="separator:a94dcc1308ef3c6bae322b8069083da4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9288b499fab752d8d77172aa9735692"><td class="memItemLeft" align="right" valign="top"><a id="aa9288b499fab752d8d77172aa9735692" name="aa9288b499fab752d8d77172aa9735692"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetOpponentNickname</b> (string nickname)</td></tr>
+<tr class="memdesc:aa9288b499fab752d8d77172aa9735692"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установка никнейма противника в необходимые окна.<br /></td></tr>
+<tr class="separator:aa9288b499fab752d8d77172aa9735692"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa908dc032575eda99cb567e54811295a"><td class="memItemLeft" align="right" valign="top"><a id="aa908dc032575eda99cb567e54811295a" name="aa908dc032575eda99cb567e54811295a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetOpponentCastleSkin</b> ()</td></tr>
+<tr class="memdesc:aa908dc032575eda99cb567e54811295a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установка скина замка противника.<br /></td></tr>
+<tr class="separator:aa908dc032575eda99cb567e54811295a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82032b5fd09ed7c6ff800e40b35e3ad8"><td class="memItemLeft" align="right" valign="top"><a id="a82032b5fd09ed7c6ff800e40b35e3ad8" name="a82032b5fd09ed7c6ff800e40b35e3ad8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetOpponentCastleShards</b> ()</td></tr>
+<tr class="memdesc:a82032b5fd09ed7c6ff800e40b35e3ad8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установка осколков в руку противника.<br /></td></tr>
+<tr class="separator:a82032b5fd09ed7c6ff800e40b35e3ad8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae33736f3d40a43081c64df7b775025f4"><td class="memItemLeft" align="right" valign="top"><a id="ae33736f3d40a43081c64df7b775025f4" name="ae33736f3d40a43081c64df7b775025f4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ClearOpponentHand</b> ()</td></tr>
+<tr class="memdesc:ae33736f3d40a43081c64df7b775025f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Очистить руку противника.<br /></td></tr>
+<tr class="separator:ae33736f3d40a43081c64df7b775025f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a926464fbc6440d701d05ce7572af404f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_manager.html#a926464fbc6440d701d05ce7572af404f">ChangeRoom</a> (bool isFinishTurn=false)</td></tr>
+<tr class="memdesc:a926464fbc6440d701d05ce7572af404f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Смена комнат. Переход между общей и переговорной комнатами. <a href="class_game_manager.html#a926464fbc6440d701d05ce7572af404f">Подробнее...</a><br /></td></tr>
+<tr class="separator:a926464fbc6440d701d05ce7572af404f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d8b5783296a234eb3df55c7e7d2c123"><td class="memItemLeft" align="right" valign="top"><a id="a0d8b5783296a234eb3df55c7e7d2c123" name="a0d8b5783296a234eb3df55c7e7d2c123"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>TurnOffWindows</b> (bool isMainRoomActive=true)</td></tr>
+<tr class="memdesc:a0d8b5783296a234eb3df55c7e7d2c123"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выключить окна.<br /></td></tr>
+<tr class="separator:a0d8b5783296a234eb3df55c7e7d2c123"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02fb3eea595d3d7570e783a25bbb13f4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_manager.html#a02fb3eea595d3d7570e783a25bbb13f4">CheckReadinessOfCastlesToFinishTurn</a> ()</td></tr>
+<tr class="memdesc:a02fb3eea595d3d7570e783a25bbb13f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверка готовности замков к завершению хода. <a href="class_game_manager.html#a02fb3eea595d3d7570e783a25bbb13f4">Подробнее...</a><br /></td></tr>
+<tr class="separator:a02fb3eea595d3d7570e783a25bbb13f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05db969923250a9e4247563770411427"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_manager.html#a05db969923250a9e4247563770411427">OpenOpponentShards</a> ()</td></tr>
+<tr class="memdesc:a05db969923250a9e4247563770411427"><td class="mdescLeft">&#160;</td><td class="mdescRight">Открыть все осколки противника. <a href="class_game_manager.html#a05db969923250a9e4247563770411427">Подробнее...</a><br /></td></tr>
+<tr class="separator:a05db969923250a9e4247563770411427"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a0f3b6dcbe324e148b83758284d99f0"><td class="memItemLeft" align="right" valign="top"><a id="a1a0f3b6dcbe324e148b83758284d99f0" name="a1a0f3b6dcbe324e148b83758284d99f0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ExchangeShards</b> ()</td></tr>
+<tr class="memdesc:a1a0f3b6dcbe324e148b83758284d99f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обменять осколки.<br /></td></tr>
+<tr class="separator:a1a0f3b6dcbe324e148b83758284d99f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7872f7fe634ccec1467531a31bfee31"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_manager.html#ab7872f7fe634ccec1467531a31bfee31">IsDonationCorrect</a> ()</td></tr>
+<tr class="memdesc:ab7872f7fe634ccec1467531a31bfee31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверка на корректность пожертвования. <a href="class_game_manager.html#ab7872f7fe634ccec1467531a31bfee31">Подробнее...</a><br /></td></tr>
+<tr class="separator:ab7872f7fe634ccec1467531a31bfee31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af950cdd1026677bf6ae39862766d4815"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_manager.html#af950cdd1026677bf6ae39862766d4815">CheckMyDonation</a> ()</td></tr>
+<tr class="memdesc:af950cdd1026677bf6ae39862766d4815"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверка - сделали ли мы пожертвование. <a href="class_game_manager.html#af950cdd1026677bf6ae39862766d4815">Подробнее...</a><br /></td></tr>
+<tr class="separator:af950cdd1026677bf6ae39862766d4815"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4f94f0bb1e66b4f28322a50098f0063"><td class="memItemLeft" align="right" valign="top"><a id="aa4f94f0bb1e66b4f28322a50098f0063" name="aa4f94f0bb1e66b4f28322a50098f0063"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateSelfField</b> ()</td></tr>
+<tr class="memdesc:aa4f94f0bb1e66b4f28322a50098f0063"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обновляем собственное поле.<br /></td></tr>
+<tr class="separator:aa4f94f0bb1e66b4f28322a50098f0063"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a162d537136a7771d6f96a91f68a92269"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_manager.html#a162d537136a7771d6f96a91f68a92269">CheckNeedToReturnShard</a> ()</td></tr>
+<tr class="memdesc:a162d537136a7771d6f96a91f68a92269"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверка своего поля на необходимость возвращения в руку осколка. <a href="class_game_manager.html#a162d537136a7771d6f96a91f68a92269">Подробнее...</a><br /></td></tr>
+<tr class="separator:a162d537136a7771d6f96a91f68a92269"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa39b7b08a98f6bfea961d302deaa34f"><td class="memItemLeft" align="right" valign="top"><a id="afa39b7b08a98f6bfea961d302deaa34f" name="afa39b7b08a98f6bfea961d302deaa34f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateOpponentField</b> ()</td></tr>
+<tr class="memdesc:afa39b7b08a98f6bfea961d302deaa34f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обновляем поле противника.<br /></td></tr>
+<tr class="separator:afa39b7b08a98f6bfea961d302deaa34f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97df320c590536abd4cd701aad6ddd5e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_manager.html#a97df320c590536abd4cd701aad6ddd5e">ReturnShardToHand</a> (Transform hand, Transform field, int count)</td></tr>
+<tr class="memdesc:a97df320c590536abd4cd701aad6ddd5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возврат осколка к себе в руку. <a href="class_game_manager.html#a97df320c590536abd4cd701aad6ddd5e">Подробнее...</a><br /></td></tr>
+<tr class="separator:a97df320c590536abd4cd701aad6ddd5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a721fa9cfe6fb719369ae6a15e74fd451"><td class="memItemLeft" align="right" valign="top"><a id="a721fa9cfe6fb719369ae6a15e74fd451" name="a721fa9cfe6fb719369ae6a15e74fd451"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ResetConversationRoom</b> ()</td></tr>
+<tr class="memdesc:a721fa9cfe6fb719369ae6a15e74fd451"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сброс переговорной.<br /></td></tr>
+<tr class="separator:a721fa9cfe6fb719369ae6a15e74fd451"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2068cecc65c2e3c5c8362e4253c81ae0"><td class="memItemLeft" align="right" valign="top"><a id="a2068cecc65c2e3c5c8362e4253c81ae0" name="a2068cecc65c2e3c5c8362e4253c81ae0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ResetButtons</b> ()</td></tr>
+<tr class="memdesc:a2068cecc65c2e3c5c8362e4253c81ae0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сброс кнопок.<br /></td></tr>
+<tr class="separator:a2068cecc65c2e3c5c8362e4253c81ae0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a897d6bb9a0195a37676c7f282c8590c2"><td class="memItemLeft" align="right" valign="top"><a id="a897d6bb9a0195a37676c7f282c8590c2" name="a897d6bb9a0195a37676c7f282c8590c2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ResetArrows</b> ()</td></tr>
+<tr class="memdesc:a897d6bb9a0195a37676c7f282c8590c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сброс стрелок.<br /></td></tr>
+<tr class="separator:a897d6bb9a0195a37676c7f282c8590c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabeef729603689e644aa0716d3bfb2b2"><td class="memItemLeft" align="right" valign="top"><a id="aabeef729603689e644aa0716d3bfb2b2" name="aabeef729603689e644aa0716d3bfb2b2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ResetDonationButton</b> ()</td></tr>
+<tr class="memdesc:aabeef729603689e644aa0716d3bfb2b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сбросить кнопку пожертвований.<br /></td></tr>
+<tr class="separator:aabeef729603689e644aa0716d3bfb2b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae99715ed0d961fd2e1d216b5b40a1249"><td class="memItemLeft" align="right" valign="top"><a id="ae99715ed0d961fd2e1d216b5b40a1249" name="ae99715ed0d961fd2e1d216b5b40a1249"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>DeleteShardsInFields</b> ()</td></tr>
+<tr class="memdesc:ae99715ed0d961fd2e1d216b5b40a1249"><td class="mdescLeft">&#160;</td><td class="mdescRight">Удалить осколки с полей.<br /></td></tr>
+<tr class="separator:ae99715ed0d961fd2e1d216b5b40a1249"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40b1d9d0f780bf62ab6a6e80ebbdbc25"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_manager.html#a40b1d9d0f780bf62ab6a6e80ebbdbc25">ChangeColorDonationButton</a> (<a class="el" href="class_game_manager.html#ad5ef86acba1e705a15aa6bc69238309a">ColorDonationButton</a> colorDonationButton)</td></tr>
+<tr class="memdesc:a40b1d9d0f780bf62ab6a6e80ebbdbc25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Поменять цвет кнопки пожертвования на указанный. <a href="class_game_manager.html#a40b1d9d0f780bf62ab6a6e80ebbdbc25">Подробнее...</a><br /></td></tr>
+<tr class="separator:a40b1d9d0f780bf62ab6a6e80ebbdbc25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c8f6c618ce51add5d63e1e2eddb2006"><td class="memItemLeft" align="right" valign="top"><a id="a2c8f6c618ce51add5d63e1e2eddb2006" name="a2c8f6c618ce51add5d63e1e2eddb2006"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>TurnDownDonation</b> ()</td></tr>
+<tr class="memdesc:a2c8f6c618ce51add5d63e1e2eddb2006"><td class="mdescLeft">&#160;</td><td class="mdescRight">Отказаться от пожертвования.<br /></td></tr>
+<tr class="separator:a2c8f6c618ce51add5d63e1e2eddb2006"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e11df35aa172c743cf62c64b668587e"><td class="memItemLeft" align="right" valign="top"><a id="a4e11df35aa172c743cf62c64b668587e" name="a4e11df35aa172c743cf62c64b668587e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveShardFromOpponentField</b> ()</td></tr>
+<tr class="memdesc:a4e11df35aa172c743cf62c64b668587e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Убрать осколок из поля противника.<br /></td></tr>
+<tr class="separator:a4e11df35aa172c743cf62c64b668587e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9dcbe462fb7668a8c3c06492839c2a3e"><td class="memItemLeft" align="right" valign="top"><a id="a9dcbe462fb7668a8c3c06492839c2a3e" name="a9dcbe462fb7668a8c3c06492839c2a3e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>IncreaseNumberOfSkippingMoves</b> ()</td></tr>
+<tr class="memdesc:a9dcbe462fb7668a8c3c06492839c2a3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Увеличить у замка количество пропусков хода.<br /></td></tr>
+<tr class="separator:a9dcbe462fb7668a8c3c06492839c2a3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab6069b030cabb024c9687305bc48f54"><td class="memItemLeft" align="right" valign="top"><a id="aab6069b030cabb024c9687305bc48f54" name="aab6069b030cabb024c9687305bc48f54"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>IncreaseNumberOfExchanges</b> ()</td></tr>
+<tr class="memdesc:aab6069b030cabb024c9687305bc48f54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Увеличить у замка количество обменов.<br /></td></tr>
+<tr class="separator:aab6069b030cabb024c9687305bc48f54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0634f4e0db5faf42b87d08abf8db164b"><td class="memItemLeft" align="right" valign="top"><a id="a0634f4e0db5faf42b87d08abf8db164b" name="a0634f4e0db5faf42b87d08abf8db164b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>IncreaseNumberOfWrongDonations</b> ()</td></tr>
+<tr class="memdesc:a0634f4e0db5faf42b87d08abf8db164b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Увеличить у замка количество неверных пожертвований.<br /></td></tr>
+<tr class="separator:a0634f4e0db5faf42b87d08abf8db164b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4383ea665e76a84b0119e228fd109e0e"><td class="memItemLeft" align="right" valign="top"><a id="a4383ea665e76a84b0119e228fd109e0e" name="a4383ea665e76a84b0119e228fd109e0e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>IncreaseNumberOfCorrectDonations</b> ()</td></tr>
+<tr class="memdesc:a4383ea665e76a84b0119e228fd109e0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Увеличить у замка количество верных пожертвований.<br /></td></tr>
+<tr class="separator:a4383ea665e76a84b0119e228fd109e0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7cef9b75e3048ab7d89d7d7a4915e4a"><td class="memItemLeft" align="right" valign="top"><a id="ad7cef9b75e3048ab7d89d7d7a4915e4a" name="ad7cef9b75e3048ab7d89d7d7a4915e4a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>IncreaseNumberOfAgreements</b> ()</td></tr>
+<tr class="memdesc:ad7cef9b75e3048ab7d89d7d7a4915e4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Увеличить у замка количество соглашений.<br /></td></tr>
+<tr class="separator:ad7cef9b75e3048ab7d89d7d7a4915e4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30911e55d0888afacefb7c0a33d66031"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_manager.html#a30911e55d0888afacefb7c0a33d66031">CheckEventSender</a> (string senderNickname)</td></tr>
+<tr class="memdesc:a30911e55d0888afacefb7c0a33d66031"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверка отправителя события. <a href="class_game_manager.html#a30911e55d0888afacefb7c0a33d66031">Подробнее...</a><br /></td></tr>
+<tr class="separator:a30911e55d0888afacefb7c0a33d66031"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d69157cb6b97eabeff2374d8e9adeaf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_manager.html#a8d69157cb6b97eabeff2374d8e9adeaf">GameOver</a> ()</td></tr>
+<tr class="memdesc:a8d69157cb6b97eabeff2374d8e9adeaf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конец игры. <a href="class_game_manager.html#a8d69157cb6b97eabeff2374d8e9adeaf">Подробнее...</a><br /></td></tr>
+<tr class="separator:a8d69157cb6b97eabeff2374d8e9adeaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82670c6951a942c700e14a93a666a429"><td class="memItemLeft" align="right" valign="top"><a id="a82670c6951a942c700e14a93a666a429" name="a82670c6951a942c700e14a93a666a429"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetShardInField</b> ()</td></tr>
+<tr class="memdesc:a82670c6951a942c700e14a93a666a429"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить осколок на поле.<br /></td></tr>
+<tr class="separator:a82670c6951a942c700e14a93a666a429"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b04ecfd0154cc96e0b06a3c716a6b67"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_manager.html#a3b04ecfd0154cc96e0b06a3c716a6b67">AddShardToField</a> (Transform field, <a class="el" href="class_shard.html">Shard</a> shard)</td></tr>
+<tr class="memdesc:a3b04ecfd0154cc96e0b06a3c716a6b67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавить осколок на поле. <a href="class_game_manager.html#a3b04ecfd0154cc96e0b06a3c716a6b67">Подробнее...</a><br /></td></tr>
+<tr class="separator:a3b04ecfd0154cc96e0b06a3c716a6b67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22438cdfdba2ae6f2bdb22c27ab7b7c9"><td class="memItemLeft" align="right" valign="top"><a id="a22438cdfdba2ae6f2bdb22c27ab7b7c9" name="a22438cdfdba2ae6f2bdb22c27ab7b7c9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ChangeExchangeReadiness</b> ()</td></tr>
+<tr class="memdesc:a22438cdfdba2ae6f2bdb22c27ab7b7c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Изменить готовность к обмену.<br /></td></tr>
+<tr class="separator:a22438cdfdba2ae6f2bdb22c27ab7b7c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a374af64ecd7a86a25b1b287015223934"><td class="memItemLeft" align="right" valign="top"><a id="a374af64ecd7a86a25b1b287015223934" name="a374af64ecd7a86a25b1b287015223934"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OpenExchangeWindow</b> ()</td></tr>
+<tr class="memdesc:a374af64ecd7a86a25b1b287015223934"><td class="mdescLeft">&#160;</td><td class="mdescRight">Открыть окно с выбором осколка.<br /></td></tr>
+<tr class="separator:a374af64ecd7a86a25b1b287015223934"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67c70481bec2031cabd5da2bf585855f"><td class="memItemLeft" align="right" valign="top"><a id="a67c70481bec2031cabd5da2bf585855f" name="a67c70481bec2031cabd5da2bf585855f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>DisplayShardSelectionInFields</b> ()</td></tr>
+<tr class="memdesc:a67c70481bec2031cabd5da2bf585855f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Отобразить выбор осколков на полях.<br /></td></tr>
+<tr class="separator:a67c70481bec2031cabd5da2bf585855f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a356400baa57484f2ad90cc9eff2c1ed2"><td class="memItemLeft" align="right" valign="top"><a id="a356400baa57484f2ad90cc9eff2c1ed2" name="a356400baa57484f2ad90cc9eff2c1ed2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>CloseExchangeWindow</b> ()</td></tr>
+<tr class="memdesc:a356400baa57484f2ad90cc9eff2c1ed2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Закрыть окно с выбором осколка.<br /></td></tr>
+<tr class="separator:a356400baa57484f2ad90cc9eff2c1ed2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f5715485322896e74d0afc4c6dd6af2"><td class="memItemLeft" align="right" valign="top"><a id="a0f5715485322896e74d0afc4c6dd6af2" name="a0f5715485322896e74d0afc4c6dd6af2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveShardFromSelfField</b> ()</td></tr>
+<tr class="memdesc:a0f5715485322896e74d0afc4c6dd6af2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Удалить осколок из своего поля.<br /></td></tr>
+<tr class="separator:a0f5715485322896e74d0afc4c6dd6af2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
+Закрытые статические члены</h2></td></tr>
+<tr class="memitem:a928c75e4f37af549211b9a8e121aa6c4"><td class="memItemLeft" align="right" valign="top"><a id="a928c75e4f37af549211b9a8e121aa6c4" name="a928c75e4f37af549211b9a8e121aa6c4"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>SetSelfCastleShardsIndexes</b> ()</td></tr>
+<tr class="memdesc:a928c75e4f37af549211b9a8e121aa6c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установка индексов осколков собственного замка.<br /></td></tr>
+<tr class="separator:a928c75e4f37af549211b9a8e121aa6c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a287db92a7280d7636a6efecaa6d82d1a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_manager.html#a287db92a7280d7636a6efecaa6d82d1a">UpdateHandShardsCount</a> (Transform hand)</td></tr>
+<tr class="memdesc:a287db92a7280d7636a6efecaa6d82d1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обновить число осколков в руке. <a href="class_game_manager.html#a287db92a7280d7636a6efecaa6d82d1a">Подробнее...</a><br /></td></tr>
+<tr class="separator:a287db92a7280d7636a6efecaa6d82d1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54d14dd75983b4876d2e9294da8c6ebf"><td class="memItemLeft" align="right" valign="top"><a id="a54d14dd75983b4876d2e9294da8c6ebf" name="a54d14dd75983b4876d2e9294da8c6ebf"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>MuteAllPlayers</b> ()</td></tr>
+<tr class="memdesc:a54d14dd75983b4876d2e9294da8c6ebf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Заглушить всех игроков.<br /></td></tr>
+<tr class="separator:a54d14dd75983b4876d2e9294da8c6ebf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb630016c004f8144f935d6533b19948"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_manager.html#afb630016c004f8144f935d6533b19948">IsSelectionOfShardsComplete</a> ()</td></tr>
+<tr class="memdesc:afb630016c004f8144f935d6533b19948"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выбор осколков завершен. <a href="class_game_manager.html#afb630016c004f8144f935d6533b19948">Подробнее...</a><br /></td></tr>
+<tr class="separator:afb630016c004f8144f935d6533b19948"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2e9e3816d063a6d22fef86132bfa4d0"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_manager.html#ae2e9e3816d063a6d22fef86132bfa4d0">GetSkipCount</a> ()</td></tr>
+<tr class="memdesc:ae2e9e3816d063a6d22fef86132bfa4d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить количество игроков, пропустивших ход. <a href="class_game_manager.html#ae2e9e3816d063a6d22fef86132bfa4d0">Подробнее...</a><br /></td></tr>
+<tr class="separator:ae2e9e3816d063a6d22fef86132bfa4d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18fa67781e8f2711253c0ed6ef0a55d3"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_manager.html#a18fa67781e8f2711253c0ed6ef0a55d3">CheckSkipMainRoom</a> ()</td></tr>
+<tr class="memdesc:a18fa67781e8f2711253c0ed6ef0a55d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверка на пропуск общей комнаты. <a href="class_game_manager.html#a18fa67781e8f2711253c0ed6ef0a55d3">Подробнее...</a><br /></td></tr>
+<tr class="separator:a18fa67781e8f2711253c0ed6ef0a55d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Закрытые данные</h2></td></tr>
+<tr class="memitem:a9f08f9e5604c6da4255229b39b2fcb29"><td class="memItemLeft" align="right" valign="top"><a id="a9f08f9e5604c6da4255229b39b2fcb29" name="a9f08f9e5604c6da4255229b39b2fcb29"></a>
+Transform&#160;</td><td class="memItemRight" valign="bottom"><b>selfHand</b></td></tr>
+<tr class="memdesc:a9f08f9e5604c6da4255229b39b2fcb29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Собственная рука.<br /></td></tr>
+<tr class="separator:a9f08f9e5604c6da4255229b39b2fcb29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49cf89ff981499e680b898a504bd82bf"><td class="memItemLeft" align="right" valign="top"><a id="a49cf89ff981499e680b898a504bd82bf" name="a49cf89ff981499e680b898a504bd82bf"></a>
+Transform&#160;</td><td class="memItemRight" valign="bottom"><b>selfField</b></td></tr>
+<tr class="memdesc:a49cf89ff981499e680b898a504bd82bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Собственное поле.<br /></td></tr>
+<tr class="separator:a49cf89ff981499e680b898a504bd82bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab47b22d10202c2eda55705882c870460"><td class="memItemLeft" align="right" valign="top"><a id="ab47b22d10202c2eda55705882c870460" name="ab47b22d10202c2eda55705882c870460"></a>
+Transform&#160;</td><td class="memItemRight" valign="bottom"><b>opponentHand</b></td></tr>
+<tr class="memdesc:ab47b22d10202c2eda55705882c870460"><td class="mdescLeft">&#160;</td><td class="mdescRight">Рука противника.<br /></td></tr>
+<tr class="separator:ab47b22d10202c2eda55705882c870460"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8feffa2f368b9e9c695f404f19a1da33"><td class="memItemLeft" align="right" valign="top"><a id="a8feffa2f368b9e9c695f404f19a1da33" name="a8feffa2f368b9e9c695f404f19a1da33"></a>
+Transform&#160;</td><td class="memItemRight" valign="bottom"><b>opponentField</b></td></tr>
+<tr class="memdesc:a8feffa2f368b9e9c695f404f19a1da33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Поле противника.<br /></td></tr>
+<tr class="separator:a8feffa2f368b9e9c695f404f19a1da33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3799a5900aa139e815881b0ebd9e67f1"><td class="memItemLeft" align="right" valign="top">TMP_Text&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_manager.html#a3799a5900aa139e815881b0ebd9e67f1">mainRoomTimerText</a></td></tr>
+<tr class="memdesc:a3799a5900aa139e815881b0ebd9e67f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Текстовое поле таймера в общей комнате. <a href="class_game_manager.html#a3799a5900aa139e815881b0ebd9e67f1">Подробнее...</a><br /></td></tr>
+<tr class="separator:a3799a5900aa139e815881b0ebd9e67f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f85dd256c2053f24cb499db23a1cc3f"><td class="memItemLeft" align="right" valign="top">TMP_Text&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_manager.html#a3f85dd256c2053f24cb499db23a1cc3f">conversationRoomTimerText</a></td></tr>
+<tr class="memdesc:a3f85dd256c2053f24cb499db23a1cc3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Текстовое поле таймера в переговорной комнате. <a href="class_game_manager.html#a3f85dd256c2053f24cb499db23a1cc3f">Подробнее...</a><br /></td></tr>
+<tr class="separator:a3f85dd256c2053f24cb499db23a1cc3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada0be2e6b12fd888115690817aa55c32"><td class="memItemLeft" align="right" valign="top"><a id="ada0be2e6b12fd888115690817aa55c32" name="ada0be2e6b12fd888115690817aa55c32"></a>
+TMP_Text&#160;</td><td class="memItemRight" valign="bottom"><b>numberRoundsText</b></td></tr>
+<tr class="memdesc:ada0be2e6b12fd888115690817aa55c32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Текстовое поле количества раундов.<br /></td></tr>
+<tr class="separator:ada0be2e6b12fd888115690817aa55c32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad41f5ad7e617af71fa558b8f1037610e"><td class="memItemLeft" align="right" valign="top">TMP_Text[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_manager.html#ad41f5ad7e617af71fa558b8f1037610e">opponentNicknamesText</a></td></tr>
+<tr class="memdesc:ad41f5ad7e617af71fa558b8f1037610e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Никнеймы противника. <a href="class_game_manager.html#ad41f5ad7e617af71fa558b8f1037610e">Подробнее...</a><br /></td></tr>
+<tr class="separator:ad41f5ad7e617af71fa558b8f1037610e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f260ec7619fd9974e07d80fcf36f3e6"><td class="memItemLeft" align="right" valign="top"><a id="a4f260ec7619fd9974e07d80fcf36f3e6" name="a4f260ec7619fd9974e07d80fcf36f3e6"></a>
+TMP_Text&#160;</td><td class="memItemRight" valign="bottom"><b>donationButtonText</b></td></tr>
+<tr class="memdesc:a4f260ec7619fd9974e07d80fcf36f3e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Текст состояния пожертвования.<br /></td></tr>
+<tr class="separator:a4f260ec7619fd9974e07d80fcf36f3e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb10b6a2377112a391e142412b4ec962"><td class="memItemLeft" align="right" valign="top"><a id="acb10b6a2377112a391e142412b4ec962" name="acb10b6a2377112a391e142412b4ec962"></a>
+TMP_Text&#160;</td><td class="memItemRight" valign="bottom"><b>skipCountText</b></td></tr>
+<tr class="memdesc:acb10b6a2377112a391e142412b4ec962"><td class="mdescLeft">&#160;</td><td class="mdescRight">Текст количества пропустивших ход игроков.<br /></td></tr>
+<tr class="separator:acb10b6a2377112a391e142412b4ec962"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09c05fb39d04a94a2fcfffd3b8d3bb19"><td class="memItemLeft" align="right" valign="top"><a id="a09c05fb39d04a94a2fcfffd3b8d3bb19" name="a09c05fb39d04a94a2fcfffd3b8d3bb19"></a>
+TMP_Text[]&#160;</td><td class="memItemRight" valign="bottom"><b>selfNicknames</b></td></tr>
+<tr class="memdesc:a09c05fb39d04a94a2fcfffd3b8d3bb19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Собственные названия замка.<br /></td></tr>
+<tr class="separator:a09c05fb39d04a94a2fcfffd3b8d3bb19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a848e69b05781b9811503a346b9af010a"><td class="memItemLeft" align="right" valign="top"><a id="a848e69b05781b9811503a346b9af010a" name="a848e69b05781b9811503a346b9af010a"></a>
+GameObject&#160;</td><td class="memItemRight" valign="bottom"><b>shardPref</b></td></tr>
+<tr class="memdesc:a848e69b05781b9811503a346b9af010a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Префаб осколка.<br /></td></tr>
+<tr class="separator:a848e69b05781b9811503a346b9af010a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e4b583bb34055460aae3b931539941b"><td class="memItemLeft" align="right" valign="top"><a id="a4e4b583bb34055460aae3b931539941b" name="a4e4b583bb34055460aae3b931539941b"></a>
+GameObject&#160;</td><td class="memItemRight" valign="bottom"><b>opponentCastleSkin</b></td></tr>
+<tr class="memdesc:a4e4b583bb34055460aae3b931539941b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Скин замка противника.<br /></td></tr>
+<tr class="separator:a4e4b583bb34055460aae3b931539941b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa811aba12fcbd0531adc4db740a0bf13"><td class="memItemLeft" align="right" valign="top"><a id="aa811aba12fcbd0531adc4db740a0bf13" name="aa811aba12fcbd0531adc4db740a0bf13"></a>
+GameObject&#160;</td><td class="memItemRight" valign="bottom"><b>mainGame</b></td></tr>
+<tr class="memdesc:aa811aba12fcbd0531adc4db740a0bf13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Основная игра.<br /></td></tr>
+<tr class="separator:aa811aba12fcbd0531adc4db740a0bf13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfbbc3c6ac22869273cc8668ea2d3842"><td class="memItemLeft" align="right" valign="top"><a id="abfbbc3c6ac22869273cc8668ea2d3842" name="abfbbc3c6ac22869273cc8668ea2d3842"></a>
+GameObject&#160;</td><td class="memItemRight" valign="bottom"><b>mainRoom</b></td></tr>
+<tr class="memdesc:abfbbc3c6ac22869273cc8668ea2d3842"><td class="mdescLeft">&#160;</td><td class="mdescRight">Общая комната.<br /></td></tr>
+<tr class="separator:abfbbc3c6ac22869273cc8668ea2d3842"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2010f0096361bc27ab2dfef2c2e3059"><td class="memItemLeft" align="right" valign="top"><a id="ae2010f0096361bc27ab2dfef2c2e3059" name="ae2010f0096361bc27ab2dfef2c2e3059"></a>
+GameObject&#160;</td><td class="memItemRight" valign="bottom"><b>conversationRoom</b></td></tr>
+<tr class="memdesc:ae2010f0096361bc27ab2dfef2c2e3059"><td class="mdescLeft">&#160;</td><td class="mdescRight">Переговорная.<br /></td></tr>
+<tr class="separator:ae2010f0096361bc27ab2dfef2c2e3059"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1bd25340ffdffb346d1b330154f87095"><td class="memItemLeft" align="right" valign="top"><a id="a1bd25340ffdffb346d1b330154f87095" name="a1bd25340ffdffb346d1b330154f87095"></a>
+GameObject&#160;</td><td class="memItemRight" valign="bottom"><b>gameField</b></td></tr>
+<tr class="memdesc:a1bd25340ffdffb346d1b330154f87095"><td class="mdescLeft">&#160;</td><td class="mdescRight">Игровое поле.<br /></td></tr>
+<tr class="separator:a1bd25340ffdffb346d1b330154f87095"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a438bce11880aab966e2d07b3372b75da"><td class="memItemLeft" align="right" valign="top"><a id="a438bce11880aab966e2d07b3372b75da" name="a438bce11880aab966e2d07b3372b75da"></a>
+GameObject&#160;</td><td class="memItemRight" valign="bottom"><b>resultsWindow</b></td></tr>
+<tr class="memdesc:a438bce11880aab966e2d07b3372b75da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Окно промежуточных результатов.<br /></td></tr>
+<tr class="separator:a438bce11880aab966e2d07b3372b75da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa225ea3c8d7b2c03395b4f8a0dce3495"><td class="memItemLeft" align="right" valign="top"><a id="aa225ea3c8d7b2c03395b4f8a0dce3495" name="aa225ea3c8d7b2c03395b4f8a0dce3495"></a>
+GameObject&#160;</td><td class="memItemRight" valign="bottom"><b>agreement</b></td></tr>
+<tr class="memdesc:aa225ea3c8d7b2c03395b4f8a0dce3495"><td class="mdescLeft">&#160;</td><td class="mdescRight">Окно предложения о заключении соглашения.<br /></td></tr>
+<tr class="separator:aa225ea3c8d7b2c03395b4f8a0dce3495"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1a6ab636bd8adbc66595b8205653932"><td class="memItemLeft" align="right" valign="top"><a id="ab1a6ab636bd8adbc66595b8205653932" name="ab1a6ab636bd8adbc66595b8205653932"></a>
+GameObject&#160;</td><td class="memItemRight" valign="bottom"><b>exchange</b></td></tr>
+<tr class="memdesc:ab1a6ab636bd8adbc66595b8205653932"><td class="mdescLeft">&#160;</td><td class="mdescRight">Окно выбора осколка из списка предложенных.<br /></td></tr>
+<tr class="separator:ab1a6ab636bd8adbc66595b8205653932"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28eabe169efe5ed491a3a73fd44b642b"><td class="memItemLeft" align="right" valign="top"><a id="a28eabe169efe5ed491a3a73fd44b642b" name="a28eabe169efe5ed491a3a73fd44b642b"></a>
+GameObject&#160;</td><td class="memItemRight" valign="bottom"><b>gameObjects</b></td></tr>
+<tr class="memdesc:a28eabe169efe5ed491a3a73fd44b642b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Игровые объекты.<br /></td></tr>
+<tr class="separator:a28eabe169efe5ed491a3a73fd44b642b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd6069c442a4da2269627a9f43bba128"><td class="memItemLeft" align="right" valign="top"><a id="abd6069c442a4da2269627a9f43bba128" name="abd6069c442a4da2269627a9f43bba128"></a>
+GameObject&#160;</td><td class="memItemRight" valign="bottom"><b>textChat</b></td></tr>
+<tr class="memdesc:abd6069c442a4da2269627a9f43bba128"><td class="mdescLeft">&#160;</td><td class="mdescRight">Текстовый чат.<br /></td></tr>
+<tr class="separator:abd6069c442a4da2269627a9f43bba128"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afca0348a74cdcf89cca3cc14314f3027"><td class="memItemLeft" align="right" valign="top"><a id="afca0348a74cdcf89cca3cc14314f3027" name="afca0348a74cdcf89cca3cc14314f3027"></a>
+GameObject&#160;</td><td class="memItemRight" valign="bottom"><b>listButtons</b></td></tr>
+<tr class="memdesc:afca0348a74cdcf89cca3cc14314f3027"><td class="mdescLeft">&#160;</td><td class="mdescRight">Список кнопок.<br /></td></tr>
+<tr class="separator:afca0348a74cdcf89cca3cc14314f3027"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e53d6044fc2feb61516ad13d4c22fbf"><td class="memItemLeft" align="right" valign="top"><a id="a0e53d6044fc2feb61516ad13d4c22fbf" name="a0e53d6044fc2feb61516ad13d4c22fbf"></a>
+GameObject&#160;</td><td class="memItemRight" valign="bottom"><b>techTree</b></td></tr>
+<tr class="memdesc:a0e53d6044fc2feb61516ad13d4c22fbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Древо технологий.<br /></td></tr>
+<tr class="separator:a0e53d6044fc2feb61516ad13d4c22fbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58b9ccebc658b97520bf78a0ee82ccdf"><td class="memItemLeft" align="right" valign="top"><a id="a58b9ccebc658b97520bf78a0ee82ccdf" name="a58b9ccebc658b97520bf78a0ee82ccdf"></a>
+GameObject&#160;</td><td class="memItemRight" valign="bottom"><b>opponentFinishTurn</b></td></tr>
+<tr class="memdesc:a58b9ccebc658b97520bf78a0ee82ccdf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Окно пропуска хода, если противник завершил ход.<br /></td></tr>
+<tr class="separator:a58b9ccebc658b97520bf78a0ee82ccdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d44f67fa00e5029c1780e4b21bbb3e0"><td class="memItemLeft" align="right" valign="top"><a id="a4d44f67fa00e5029c1780e4b21bbb3e0" name="a4d44f67fa00e5029c1780e4b21bbb3e0"></a>
+GameObject&#160;</td><td class="memItemRight" valign="bottom"><b>iFinishTurn</b></td></tr>
+<tr class="memdesc:a4d44f67fa00e5029c1780e4b21bbb3e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Окно пропуска хода, если вы сами завершили ход.<br /></td></tr>
+<tr class="separator:a4d44f67fa00e5029c1780e4b21bbb3e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8375f04a7f016cd4ac08e838844eca4"><td class="memItemLeft" align="right" valign="top"><a id="ac8375f04a7f016cd4ac08e838844eca4" name="ac8375f04a7f016cd4ac08e838844eca4"></a>
+GameObject&#160;</td><td class="memItemRight" valign="bottom"><b>endGameField</b></td></tr>
+<tr class="memdesc:ac8375f04a7f016cd4ac08e838844eca4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Окно конца игры.<br /></td></tr>
+<tr class="separator:ac8375f04a7f016cd4ac08e838844eca4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4b2b4f4eb347b2fa645923b9bdb8326"><td class="memItemLeft" align="right" valign="top"><a id="ac4b2b4f4eb347b2fa645923b9bdb8326" name="ac4b2b4f4eb347b2fa645923b9bdb8326"></a>
+GameObject&#160;</td><td class="memItemRight" valign="bottom"><b>listCastles</b></td></tr>
+<tr class="memdesc:ac4b2b4f4eb347b2fa645923b9bdb8326"><td class="mdescLeft">&#160;</td><td class="mdescRight">Узел, где спавнятся замки.<br /></td></tr>
+<tr class="separator:ac4b2b4f4eb347b2fa645923b9bdb8326"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a290910867c5bfe09b8e33e4a72d5bee0"><td class="memItemLeft" align="right" valign="top"><a id="a290910867c5bfe09b8e33e4a72d5bee0" name="a290910867c5bfe09b8e33e4a72d5bee0"></a>
+GameObject&#160;</td><td class="memItemRight" valign="bottom"><b>chatField</b></td></tr>
+<tr class="memdesc:a290910867c5bfe09b8e33e4a72d5bee0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Поле чата.<br /></td></tr>
+<tr class="separator:a290910867c5bfe09b8e33e4a72d5bee0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a170a1961954a49242dfb07584be3c599"><td class="memItemLeft" align="right" valign="top"><a id="a170a1961954a49242dfb07584be3c599" name="a170a1961954a49242dfb07584be3c599"></a>
+Button&#160;</td><td class="memItemRight" valign="bottom"><b>skipButton</b></td></tr>
+<tr class="memdesc:a170a1961954a49242dfb07584be3c599"><td class="mdescLeft">&#160;</td><td class="mdescRight">Кнопка пропуска общей комнаты.<br /></td></tr>
+<tr class="separator:a170a1961954a49242dfb07584be3c599"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbad83459aad980f0571e5eff7cddfff"><td class="memItemLeft" align="right" valign="top"><a id="adbad83459aad980f0571e5eff7cddfff" name="adbad83459aad980f0571e5eff7cddfff"></a>
+Button&#160;</td><td class="memItemRight" valign="bottom"><b>selfArrowButton</b></td></tr>
+<tr class="memdesc:adbad83459aad980f0571e5eff7cddfff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Кнопка подтверждения готовности к обмену.<br /></td></tr>
+<tr class="separator:adbad83459aad980f0571e5eff7cddfff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1587666e88951e8ae5193b5ea1ef41c5"><td class="memItemLeft" align="right" valign="top"><a id="a1587666e88951e8ae5193b5ea1ef41c5" name="a1587666e88951e8ae5193b5ea1ef41c5"></a>
+Button&#160;</td><td class="memItemRight" valign="bottom"><b>finishTurnButton</b></td></tr>
+<tr class="memdesc:a1587666e88951e8ae5193b5ea1ef41c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Кнопка завершения хода.<br /></td></tr>
+<tr class="separator:a1587666e88951e8ae5193b5ea1ef41c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab313406fda7bb75d107c47f92cc7db63"><td class="memItemLeft" align="right" valign="top"><a id="ab313406fda7bb75d107c47f92cc7db63" name="ab313406fda7bb75d107c47f92cc7db63"></a>
+Button[]&#160;</td><td class="memItemRight" valign="bottom"><b>shardsToExchange</b></td></tr>
+<tr class="memdesc:ab313406fda7bb75d107c47f92cc7db63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Кнопки осколков в окне выбора осколков.<br /></td></tr>
+<tr class="separator:ab313406fda7bb75d107c47f92cc7db63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a446dcfe0a4bc06224d47cd2c066a1694"><td class="memItemLeft" align="right" valign="top"><a id="a446dcfe0a4bc06224d47cd2c066a1694" name="a446dcfe0a4bc06224d47cd2c066a1694"></a>
+Button&#160;</td><td class="memItemRight" valign="bottom"><b>donationButton</b></td></tr>
+<tr class="memdesc:a446dcfe0a4bc06224d47cd2c066a1694"><td class="mdescLeft">&#160;</td><td class="mdescRight">Кнопка пожертвований.<br /></td></tr>
+<tr class="separator:a446dcfe0a4bc06224d47cd2c066a1694"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d0cc73419c43a9abc6974449a4d5420"><td class="memItemLeft" align="right" valign="top"><a id="a2d0cc73419c43a9abc6974449a4d5420" name="a2d0cc73419c43a9abc6974449a4d5420"></a>
+Button&#160;</td><td class="memItemRight" valign="bottom"><b>agreementButton</b></td></tr>
+<tr class="memdesc:a2d0cc73419c43a9abc6974449a4d5420"><td class="mdescLeft">&#160;</td><td class="mdescRight">Кнопка заключения соглашения.<br /></td></tr>
+<tr class="separator:a2d0cc73419c43a9abc6974449a4d5420"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21508ec23c1401e595c4c24b566801fc"><td class="memItemLeft" align="right" valign="top"><a id="a21508ec23c1401e595c4c24b566801fc" name="a21508ec23c1401e595c4c24b566801fc"></a>
+Image&#160;</td><td class="memItemRight" valign="bottom"><b>selfArrow</b></td></tr>
+<tr class="memdesc:a21508ec23c1401e595c4c24b566801fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Собственная стрелка.<br /></td></tr>
+<tr class="separator:a21508ec23c1401e595c4c24b566801fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44fb8d564549a1b07536db6cbf2c0f53"><td class="memItemLeft" align="right" valign="top"><a id="a44fb8d564549a1b07536db6cbf2c0f53" name="a44fb8d564549a1b07536db6cbf2c0f53"></a>
+Image&#160;</td><td class="memItemRight" valign="bottom"><b>opponentArrow</b></td></tr>
+<tr class="memdesc:a44fb8d564549a1b07536db6cbf2c0f53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Стрелка противника.<br /></td></tr>
+<tr class="separator:a44fb8d564549a1b07536db6cbf2c0f53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe6d1bbf2a5b65e71115ddc41212e40f"><td class="memItemLeft" align="right" valign="top"><a id="afe6d1bbf2a5b65e71115ddc41212e40f" name="afe6d1bbf2a5b65e71115ddc41212e40f"></a>
+Image&#160;</td><td class="memItemRight" valign="bottom"><b>circleImage</b></td></tr>
+<tr class="memdesc:afe6d1bbf2a5b65e71115ddc41212e40f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Текущее изображение круга. Круг - кнопка пожертвований<br /></td></tr>
+<tr class="separator:afe6d1bbf2a5b65e71115ddc41212e40f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a348fcd145c712c007df927aa0fa9ad0b"><td class="memItemLeft" align="right" valign="top"><a id="a348fcd145c712c007df927aa0fa9ad0b" name="a348fcd145c712c007df927aa0fa9ad0b"></a>
+Sprite[]&#160;</td><td class="memItemRight" valign="bottom"><b>circles</b></td></tr>
+<tr class="memdesc:a348fcd145c712c007df927aa0fa9ad0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Массив спрайтов из ассетов.<br /></td></tr>
+<tr class="separator:a348fcd145c712c007df927aa0fa9ad0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbba294572cd8251cb03a03ad48130dc"><td class="memItemLeft" align="right" valign="top"><a id="acbba294572cd8251cb03a03ad48130dc" name="acbba294572cd8251cb03a03ad48130dc"></a>
+Toggle&#160;</td><td class="memItemRight" valign="bottom"><b>selfToggleMicrophone</b></td></tr>
+<tr class="memdesc:acbba294572cd8251cb03a03ad48130dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Собственный микрофон.<br /></td></tr>
+<tr class="separator:acbba294572cd8251cb03a03ad48130dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add7959cd224c4c7e4fe0f949cd821048"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_manager.html#add7959cd224c4c7e4fe0f949cd821048">roundsLeft</a></td></tr>
+<tr class="memdesc:add7959cd224c4c7e4fe0f949cd821048"><td class="mdescLeft">&#160;</td><td class="mdescRight">Количество оставшихся раундов. <a href="class_game_manager.html#add7959cd224c4c7e4fe0f949cd821048">Подробнее...</a><br /></td></tr>
+<tr class="separator:add7959cd224c4c7e4fe0f949cd821048"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2172931d021fdb3e8a4c00f992228323"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_manager.html#a2172931d021fdb3e8a4c00f992228323">mainRoomTimerLeft</a></td></tr>
+<tr class="memdesc:a2172931d021fdb3e8a4c00f992228323"><td class="mdescLeft">&#160;</td><td class="mdescRight">Таймер игры в главной комнате. <a href="class_game_manager.html#a2172931d021fdb3e8a4c00f992228323">Подробнее...</a><br /></td></tr>
+<tr class="separator:a2172931d021fdb3e8a4c00f992228323"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fb656233007ea9a50b541624069e041"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_manager.html#a6fb656233007ea9a50b541624069e041">conversationRoomTimerLeft</a></td></tr>
+<tr class="memdesc:a6fb656233007ea9a50b541624069e041"><td class="mdescLeft">&#160;</td><td class="mdescRight">Таймер комнаты переговоров. <a href="class_game_manager.html#a6fb656233007ea9a50b541624069e041">Подробнее...</a><br /></td></tr>
+<tr class="separator:a6fb656233007ea9a50b541624069e041"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad6374f7e0973a8b6ccbd8f90830755b"><td class="memItemLeft" align="right" valign="top"><a id="aad6374f7e0973a8b6ccbd8f90830755b" name="aad6374f7e0973a8b6ccbd8f90830755b"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>mainRoomTimerOn</b></td></tr>
+<tr class="memdesc:aad6374f7e0973a8b6ccbd8f90830755b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Включён ли таймер главной комнаты <br /></td></tr>
+<tr class="separator:aad6374f7e0973a8b6ccbd8f90830755b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0643f92f80b44367d1041844f8af158"><td class="memItemLeft" align="right" valign="top"><a id="ac0643f92f80b44367d1041844f8af158" name="ac0643f92f80b44367d1041844f8af158"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>conversationRoomTimerOn</b></td></tr>
+<tr class="memdesc:ac0643f92f80b44367d1041844f8af158"><td class="mdescLeft">&#160;</td><td class="mdescRight">Включён ли таймер переговоров.<br /></td></tr>
+<tr class="separator:ac0643f92f80b44367d1041844f8af158"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22192885865779be90ea86869962cacd"><td class="memItemLeft" align="right" valign="top"><a id="a22192885865779be90ea86869962cacd" name="a22192885865779be90ea86869962cacd"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>numberOfOffersToDonate</b></td></tr>
+<tr class="memdesc:a22192885865779be90ea86869962cacd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Количество предложений пожертвования.<br /></td></tr>
+<tr class="separator:a22192885865779be90ea86869962cacd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88774905851345be4676e6284b6d239b"><td class="memItemLeft" align="right" valign="top"><a id="a88774905851345be4676e6284b6d239b" name="a88774905851345be4676e6284b6d239b"></a>
+TMP_Text&#160;</td><td class="memItemRight" valign="bottom"><b>TestVoice</b></td></tr>
+<tr class="separator:a88774905851345be4676e6284b6d239b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66aebb0dccc0687c3b78dc00e0f225ae"><td class="memItemLeft" align="right" valign="top"><a id="a66aebb0dccc0687c3b78dc00e0f225ae" name="a66aebb0dccc0687c3b78dc00e0f225ae"></a>
+TMP_Text&#160;</td><td class="memItemRight" valign="bottom"><b>TestGroup</b></td></tr>
+<tr class="separator:a66aebb0dccc0687c3b78dc00e0f225ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a086da406223907e4aa3f35c5fa9516d9"><td class="memItemLeft" align="right" valign="top"><a id="a086da406223907e4aa3f35c5fa9516d9" name="a086da406223907e4aa3f35c5fa9516d9"></a>
+TMP_Text&#160;</td><td class="memItemRight" valign="bottom"><b>TestAgreement</b></td></tr>
+<tr class="separator:a086da406223907e4aa3f35c5fa9516d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
+Закрытые статические данные</h2></td></tr>
+<tr class="memitem:a17999c5c55b9e2ae011e1be580bb7f32"><td class="memItemLeft" align="right" valign="top"><a id="a17999c5c55b9e2ae011e1be580bb7f32" name="a17999c5c55b9e2ae011e1be580bb7f32"></a>
+const int&#160;</td><td class="memItemRight" valign="bottom"><b>NumberInitialShards</b> = 3</td></tr>
+<tr class="memdesc:a17999c5c55b9e2ae011e1be580bb7f32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Количество выдаваемых при старте осколков.<br /></td></tr>
+<tr class="separator:a17999c5c55b9e2ae011e1be580bb7f32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adba48895c44ddef600cdfe6a706aa87e"><td class="memItemLeft" align="right" valign="top"><a id="adba48895c44ddef600cdfe6a706aa87e" name="adba48895c44ddef600cdfe6a706aa87e"></a>
+const int&#160;</td><td class="memItemRight" valign="bottom"><b>MaxNumberRounds</b> = 20</td></tr>
+<tr class="memdesc:adba48895c44ddef600cdfe6a706aa87e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Максимальное количество раундов в игре.<br /></td></tr>
+<tr class="separator:adba48895c44ddef600cdfe6a706aa87e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0a749b8ccf612b3d4ad21031a133830"><td class="memItemLeft" align="right" valign="top">const float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_manager.html#ac0a749b8ccf612b3d4ad21031a133830">MainRoomTime</a> = 15</td></tr>
+<tr class="memdesc:ac0a749b8ccf612b3d4ad21031a133830"><td class="mdescLeft">&#160;</td><td class="mdescRight">Время обзорного этапа. <a href="class_game_manager.html#ac0a749b8ccf612b3d4ad21031a133830">Подробнее...</a><br /></td></tr>
+<tr class="separator:ac0a749b8ccf612b3d4ad21031a133830"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09e8cc3689aeeef2b35098fe9c3310a2"><td class="memItemLeft" align="right" valign="top">const float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_manager.html#a09e8cc3689aeeef2b35098fe9c3310a2">ConversationRoomTime</a> = 90</td></tr>
+<tr class="memdesc:a09e8cc3689aeeef2b35098fe9c3310a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Время переговорного этапа. <a href="class_game_manager.html#a09e8cc3689aeeef2b35098fe9c3310a2">Подробнее...</a><br /></td></tr>
+<tr class="separator:a09e8cc3689aeeef2b35098fe9c3310a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab07661802cb753de41a26a4cbd3c1300"><td class="memItemLeft" align="right" valign="top"><a id="ab07661802cb753de41a26a4cbd3c1300" name="ab07661802cb753de41a26a4cbd3c1300"></a>
+const byte&#160;</td><td class="memItemRight" valign="bottom"><b>EndGameEventCode</b> = 3</td></tr>
+<tr class="memdesc:ab07661802cb753de41a26a4cbd3c1300"><td class="mdescLeft">&#160;</td><td class="mdescRight">Код завершения игры.<br /></td></tr>
+<tr class="separator:ab07661802cb753de41a26a4cbd3c1300"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6767fc89cc2e53ba0d92a05f9481455d"><td class="memItemLeft" align="right" valign="top"><a id="a6767fc89cc2e53ba0d92a05f9481455d" name="a6767fc89cc2e53ba0d92a05f9481455d"></a>
+const byte&#160;</td><td class="memItemRight" valign="bottom"><b>GiveNewShardsEventCode</b> = 4</td></tr>
+<tr class="memdesc:a6767fc89cc2e53ba0d92a05f9481455d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Код выдачи осколков.<br /></td></tr>
+<tr class="separator:a6767fc89cc2e53ba0d92a05f9481455d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12f11a91a43bfe7a9f783fb1bd93d1a1"><td class="memItemLeft" align="right" valign="top"><a id="a12f11a91a43bfe7a9f783fb1bd93d1a1" name="a12f11a91a43bfe7a9f783fb1bd93d1a1"></a>
+const byte&#160;</td><td class="memItemRight" valign="bottom"><b>SetShardInFieldEventCode</b> = 5</td></tr>
+<tr class="memdesc:a12f11a91a43bfe7a9f783fb1bd93d1a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Код установки осколка в ячейке.<br /></td></tr>
+<tr class="separator:a12f11a91a43bfe7a9f783fb1bd93d1a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab233361fb87734ccee72af87141222cd"><td class="memItemLeft" align="right" valign="top"><a id="ab233361fb87734ccee72af87141222cd" name="ab233361fb87734ccee72af87141222cd"></a>
+const byte&#160;</td><td class="memItemRight" valign="bottom"><b>ChangeExchangeReadinessEventCode</b> = 6</td></tr>
+<tr class="memdesc:ab233361fb87734ccee72af87141222cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Код изменения состояния готовности к обмену.<br /></td></tr>
+<tr class="separator:ab233361fb87734ccee72af87141222cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6ad397299d391275b60b27952032bd0"><td class="memItemLeft" align="right" valign="top"><a id="ae6ad397299d391275b60b27952032bd0" name="ae6ad397299d391275b60b27952032bd0"></a>
+const byte&#160;</td><td class="memItemRight" valign="bottom"><b>OpenExchangeWindowEventCode</b> = 7</td></tr>
+<tr class="memdesc:ae6ad397299d391275b60b27952032bd0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Код открытия окна обмена.<br /></td></tr>
+<tr class="separator:ae6ad397299d391275b60b27952032bd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab18fab7733d08b44b0e2f6042bbe6867"><td class="memItemLeft" align="right" valign="top"><a id="ab18fab7733d08b44b0e2f6042bbe6867" name="ab18fab7733d08b44b0e2f6042bbe6867"></a>
+const byte&#160;</td><td class="memItemRight" valign="bottom"><b>SelectShardEventCode</b> = 8</td></tr>
+<tr class="memdesc:ab18fab7733d08b44b0e2f6042bbe6867"><td class="mdescLeft">&#160;</td><td class="mdescRight">Код выбора осколка.<br /></td></tr>
+<tr class="separator:ab18fab7733d08b44b0e2f6042bbe6867"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a4d35baea09edbda15e235009e8996f"><td class="memItemLeft" align="right" valign="top"><a id="a9a4d35baea09edbda15e235009e8996f" name="a9a4d35baea09edbda15e235009e8996f"></a>
+const byte&#160;</td><td class="memItemRight" valign="bottom"><b>DonationEventCode</b> = 9</td></tr>
+<tr class="memdesc:a9a4d35baea09edbda15e235009e8996f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Код пожертвований.<br /></td></tr>
+<tr class="separator:a9a4d35baea09edbda15e235009e8996f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac49cd2215bce67e1fefe30571fe7c7a2"><td class="memItemLeft" align="right" valign="top"><a id="ac49cd2215bce67e1fefe30571fe7c7a2" name="ac49cd2215bce67e1fefe30571fe7c7a2"></a>
+const byte&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveShardFromOpponentFieldEventCode</b> = 10</td></tr>
+<tr class="memdesc:ac49cd2215bce67e1fefe30571fe7c7a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Код, указывающий на то, что нужно убрать осколок с поля противника.<br /></td></tr>
+<tr class="separator:ac49cd2215bce67e1fefe30571fe7c7a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1781bb8a5bda8154abc8b689a17b01f7"><td class="memItemLeft" align="right" valign="top"><a id="a1781bb8a5bda8154abc8b689a17b01f7" name="a1781bb8a5bda8154abc8b689a17b01f7"></a>
+const byte&#160;</td><td class="memItemRight" valign="bottom"><b>TurnDownDonationEventCode</b> = 11</td></tr>
+<tr class="memdesc:a1781bb8a5bda8154abc8b689a17b01f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Код отказа от пожертвования.<br /></td></tr>
+<tr class="separator:a1781bb8a5bda8154abc8b689a17b01f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae971baa413fb093b5c22c20fb4f59a4d"><td class="memItemLeft" align="right" valign="top"><a id="ae971baa413fb093b5c22c20fb4f59a4d" name="ae971baa413fb093b5c22c20fb4f59a4d"></a>
+const byte&#160;</td><td class="memItemRight" valign="bottom"><b>FinishTurnEventCode</b> = 12</td></tr>
+<tr class="memdesc:ae971baa413fb093b5c22c20fb4f59a4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Код завершения хода.<br /></td></tr>
+<tr class="separator:ae971baa413fb093b5c22c20fb4f59a4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af284f258da29d72a09b4c59c07a90621"><td class="memItemLeft" align="right" valign="top"><a id="af284f258da29d72a09b4c59c07a90621" name="af284f258da29d72a09b4c59c07a90621"></a>
+const byte&#160;</td><td class="memItemRight" valign="bottom"><b>SkipEventCode</b> = 13</td></tr>
+<tr class="memdesc:af284f258da29d72a09b4c59c07a90621"><td class="mdescLeft">&#160;</td><td class="mdescRight">Код пропуска.<br /></td></tr>
+<tr class="separator:af284f258da29d72a09b4c59c07a90621"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d997026426b52ed8d01f19e228ce41c"><td class="memItemLeft" align="right" valign="top"><a id="a1d997026426b52ed8d01f19e228ce41c" name="a1d997026426b52ed8d01f19e228ce41c"></a>
+const byte&#160;</td><td class="memItemRight" valign="bottom"><b>AgreementEventCode</b> = 14</td></tr>
+<tr class="memdesc:a1d997026426b52ed8d01f19e228ce41c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Код соглашения.<br /></td></tr>
+<tr class="separator:a1d997026426b52ed8d01f19e228ce41c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac633b302f36904a59b645eb4d721f7cd"><td class="memItemLeft" align="right" valign="top"><a id="ac633b302f36904a59b645eb4d721f7cd" name="ac633b302f36904a59b645eb4d721f7cd"></a>
+const byte&#160;</td><td class="memItemRight" valign="bottom"><b>SetFreeAgreementEventCode</b> = 15</td></tr>
+<tr class="memdesc:ac633b302f36904a59b645eb4d721f7cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Код заключения свободного соглашения.<br /></td></tr>
+<tr class="separator:ac633b302f36904a59b645eb4d721f7cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd67838a9abbd121c32c853bbe356cdc"><td class="memItemLeft" align="right" valign="top"><a id="acd67838a9abbd121c32c853bbe356cdc" name="acd67838a9abbd121c32c853bbe356cdc"></a>
+const byte&#160;</td><td class="memItemRight" valign="bottom"><b>SetOpponentAgreementEventCode</b> = 16</td></tr>
+<tr class="memdesc:acd67838a9abbd121c32c853bbe356cdc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Код заключения соглашения оппонента.<br /></td></tr>
+<tr class="separator:acd67838a9abbd121c32c853bbe356cdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f084a4655fceada68697ec91eb68ed6"><td class="memItemLeft" align="right" valign="top"><a id="a5f084a4655fceada68697ec91eb68ed6" name="a5f084a4655fceada68697ec91eb68ed6"></a>
+const byte&#160;</td><td class="memItemRight" valign="bottom"><b>SetGroupEventCode</b> = 17</td></tr>
+<tr class="memdesc:a5f084a4655fceada68697ec91eb68ed6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Код распределения игрока по группам.<br /></td></tr>
+<tr class="separator:a5f084a4655fceada68697ec91eb68ed6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a871a46756151697883909f29c632f26b"><td class="memItemLeft" align="right" valign="top"><a id="a871a46756151697883909f29c632f26b" name="a871a46756151697883909f29c632f26b"></a>
+const int&#160;</td><td class="memItemRight" valign="bottom"><b>NumberNewShards</b> = 2</td></tr>
+<tr class="memdesc:a871a46756151697883909f29c632f26b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Количество выдаваемых новых осколков.<br /></td></tr>
+<tr class="separator:a871a46756151697883909f29c632f26b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p >Игровой менеджер.</p>
+<p >Данный класс отвечат за основную игровую логику игры.</p>
+</div><h2 class="groupheader">Перечисления</h2>
+<a id="a34e5ed9b843a73ba45ae75ad1e850dd4" name="a34e5ed9b843a73ba45ae75ad1e850dd4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34e5ed9b843a73ba45ae75ad1e850dd4">&#9670;&nbsp;</a></span>ArrowState</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_game_manager.html#a34e5ed9b843a73ba45ae75ad1e850dd4">GameManager.ArrowState</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Состояние стрелки.</p>
+<table class="fieldtable">
+<tr><th colspan="2">Элементы перечислений</th></tr><tr><td class="fieldname"><a id="a34e5ed9b843a73ba45ae75ad1e850dd4a9aa76d8a9f8e25e87dbcafc7aaf556fc" name="a34e5ed9b843a73ba45ae75ad1e850dd4a9aa76d8a9f8e25e87dbcafc7aaf556fc"></a>filled&#160;</td><td class="fielddoc"><p >Заполненное состояние стрелки.</p>
+</td></tr>
+<tr><td class="fieldname"><a id="a34e5ed9b843a73ba45ae75ad1e850dd4aa2e4822a98337283e39f7b60acf85ec9" name="a34e5ed9b843a73ba45ae75ad1e850dd4aa2e4822a98337283e39f7b60acf85ec9"></a>empty&#160;</td><td class="fielddoc"><p >Пустое состояние стрелки.</p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="ad5ef86acba1e705a15aa6bc69238309a" name="ad5ef86acba1e705a15aa6bc69238309a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5ef86acba1e705a15aa6bc69238309a">&#9670;&nbsp;</a></span>ColorDonationButton</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_game_manager.html#ad5ef86acba1e705a15aa6bc69238309a">GameManager.ColorDonationButton</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Тип персонажа (я или противник).</p>
+<p >Цвет кнопки пожертвований.</p>
+<table class="fieldtable">
+<tr><th colspan="2">Элементы перечислений</th></tr><tr><td class="fieldname"><a id="ad5ef86acba1e705a15aa6bc69238309aaee38e4d5dd68c4e440825018d549cb47" name="ad5ef86acba1e705a15aa6bc69238309aaee38e4d5dd68c4e440825018d549cb47"></a>Red&#160;</td><td class="fielddoc"><p >Красный цвет - пожертвование не предложено.</p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad5ef86acba1e705a15aa6bc69238309aad382816a3cbeed082c9e216e7392eed1" name="ad5ef86acba1e705a15aa6bc69238309aad382816a3cbeed082c9e216e7392eed1"></a>Green&#160;</td><td class="fielddoc"><p >Зелёный цвет - вы предложили пожертвование.</p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad5ef86acba1e705a15aa6bc69238309aa7d2b88f5977b8a31c6193b4c81a43daf" name="ad5ef86acba1e705a15aa6bc69238309aa7d2b88f5977b8a31c6193b4c81a43daf"></a>Golden&#160;</td><td class="fielddoc"><p >Золотой цвет - вам предложили пожертвование.</p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a id="a5419a6b9454a1f2fae68153a84d6678d" name="a5419a6b9454a1f2fae68153a84d6678d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5419a6b9454a1f2fae68153a84d6678d">&#9670;&nbsp;</a></span>AddGhostShard()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void GameManager.AddGhostShard </td>
+          <td>(</td>
+          <td class="paramtype">GameObject&#160;</td>
+          <td class="paramname"><em>shardPref</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Transform&#160;</td>
+          <td class="paramname"><em>field</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_shard.html">Shard</a>&#160;</td>
+          <td class="paramname"><em>shard</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Добавить осколок-призрак на поле.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">field</td><td>Поле, куда необходимо положить осколок.</td></tr>
+    <tr><td class="paramname">shard</td><td>Осколок, который необходимо положить.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae85619e5747c08dcbc9581f4757037ef" name="ae85619e5747c08dcbc9581f4757037ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae85619e5747c08dcbc9581f4757037ef">&#9670;&nbsp;</a></span>AddNewShardToHand()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GameManager.AddNewShardToHand </td>
+          <td>(</td>
+          <td class="paramtype">Transform&#160;</td>
+          <td class="paramname"><em>hand</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_shard.html">Shard</a>&#160;</td>
+          <td class="paramname"><em>shard</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Вернуть осколок в руку.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">hand</td><td>Рука, куда необходимо положить осколок.</td></tr>
+    <tr><td class="paramname">shard</td><td>Осколок, который необходимо положить.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a3b04ecfd0154cc96e0b06a3c716a6b67" name="a3b04ecfd0154cc96e0b06a3c716a6b67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b04ecfd0154cc96e0b06a3c716a6b67">&#9670;&nbsp;</a></span>AddShardToField()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GameManager.AddShardToField </td>
+          <td>(</td>
+          <td class="paramtype">Transform&#160;</td>
+          <td class="paramname"><em>field</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_shard.html">Shard</a>&#160;</td>
+          <td class="paramname"><em>shard</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Добавить осколок на поле.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">field</td><td>Поле, куда необходимо положить осколок.</td></tr>
+    <tr><td class="paramname">shard</td><td>Осколок, который необходимо положить.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a40b1d9d0f780bf62ab6a6e80ebbdbc25" name="a40b1d9d0f780bf62ab6a6e80ebbdbc25"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40b1d9d0f780bf62ab6a6e80ebbdbc25">&#9670;&nbsp;</a></span>ChangeColorDonationButton()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GameManager.ChangeColorDonationButton </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_game_manager.html#ad5ef86acba1e705a15aa6bc69238309a">ColorDonationButton</a>&#160;</td>
+          <td class="paramname"><em>colorDonationButton</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Поменять цвет кнопки пожертвования на указанный.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">colorDonationButton</td><td>Цвет, на который необходимо поменять.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a926464fbc6440d701d05ce7572af404f" name="a926464fbc6440d701d05ce7572af404f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a926464fbc6440d701d05ce7572af404f">&#9670;&nbsp;</a></span>ChangeRoom()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GameManager.ChangeRoom </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>isFinishTurn</em> = <code>false</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Смена комнат. Переход между общей и переговорной комнатами.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">isFinishTurn</td><td>Завершен ли ход (по умолчанию false).</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a2da0bc2ba35f17e347a78d1ed0fcd030" name="a2da0bc2ba35f17e347a78d1ed0fcd030"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2da0bc2ba35f17e347a78d1ed0fcd030">&#9670;&nbsp;</a></span>ChangeStateArrow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void GameManager.ChangeStateArrow </td>
+          <td>(</td>
+          <td class="paramtype">Image&#160;</td>
+          <td class="paramname"><em>arrow</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_game_manager.html#a34e5ed9b843a73ba45ae75ad1e850dd4">ArrowState</a>&#160;</td>
+          <td class="paramname"><em>arrowState</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Поменять состояние стрелки.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">arrow</td><td>Изображение стрелки.</td></tr>
+    <tr><td class="paramname">arrowState</td><td>Состояние стрелки.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a30911e55d0888afacefb7c0a33d66031" name="a30911e55d0888afacefb7c0a33d66031"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30911e55d0888afacefb7c0a33d66031">&#9670;&nbsp;</a></span>CheckEventSender()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool GameManager.CheckEventSender </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>senderNickname</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Проверка отправителя события.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">senderNickname</td><td>Никнейм отправителя события.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Возвращает True - если противник отправил нам событие. False - в противном случае.</dd></dl>
+
+</div>
+</div>
+<a id="af950cdd1026677bf6ae39862766d4815" name="af950cdd1026677bf6ae39862766d4815"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af950cdd1026677bf6ae39862766d4815">&#9670;&nbsp;</a></span>CheckMyDonation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool GameManager.CheckMyDonation </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Проверка - сделали ли мы пожертвование.</p>
+<dl class="section return"><dt>Возвращает</dt><dd>Возвращаем True (False) - если мы (не) сделали пожертвование.</dd></dl>
+
+</div>
+</div>
+<a id="a162d537136a7771d6f96a91f68a92269" name="a162d537136a7771d6f96a91f68a92269"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a162d537136a7771d6f96a91f68a92269">&#9670;&nbsp;</a></span>CheckNeedToReturnShard()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool GameManager.CheckNeedToReturnShard </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Проверка своего поля на необходимость возвращения в руку осколка.</p>
+<dl class="section return"><dt>Возвращает</dt><dd>Возвращает True (False) - если (не) нужно вернуть осколок.</dd></dl>
+
+</div>
+</div>
+<a id="a56e397f9803acb5978aed72e4349b728" name="a56e397f9803acb5978aed72e4349b728"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56e397f9803acb5978aed72e4349b728">&#9670;&nbsp;</a></span>CheckOpponentDonation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool GameManager.CheckOpponentDonation </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Проверка - сделал ли противник пожертвование.</p>
+<dl class="section return"><dt>Возвращает</dt><dd>Возвращаем True (False) - если противник (не) сделал пожертвование.</dd></dl>
+
+</div>
+</div>
+<a id="a083c771df940a1c938e037ed7fa97ce7" name="a083c771df940a1c938e037ed7fa97ce7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a083c771df940a1c938e037ed7fa97ce7">&#9670;&nbsp;</a></span>CheckReadinessOfCastlesToExchange()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool GameManager.CheckReadinessOfCastlesToExchange </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Проверка готовности замков к обмену.</p>
+<dl class="section return"><dt>Возвращает</dt><dd>Возвращает True (False) - если оба игрока (не) готовы.</dd></dl>
+
+</div>
+</div>
+<a id="a02fb3eea595d3d7570e783a25bbb13f4" name="a02fb3eea595d3d7570e783a25bbb13f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02fb3eea595d3d7570e783a25bbb13f4">&#9670;&nbsp;</a></span>CheckReadinessOfCastlesToFinishTurn()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool GameManager.CheckReadinessOfCastlesToFinishTurn </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Проверка готовности замков к завершению хода.</p>
+<dl class="section return"><dt>Возвращает</dt><dd>Возвращает True (False) - если оба игрока (не) готовы.</dd></dl>
+
+</div>
+</div>
+<a id="a18fa67781e8f2711253c0ed6ef0a55d3" name="a18fa67781e8f2711253c0ed6ef0a55d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18fa67781e8f2711253c0ed6ef0a55d3">&#9670;&nbsp;</a></span>CheckSkipMainRoom()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool GameManager.CheckSkipMainRoom </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Проверка на пропуск общей комнаты.</p>
+<dl class="section return"><dt>Возвращает</dt><dd>Возвращает True - если все игроки нажали на пропуск. False - в противном случае.</dd></dl>
+
+</div>
+</div>
+<a id="aed1beee4e855045181986dbd1bf7f7ae" name="aed1beee4e855045181986dbd1bf7f7ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed1beee4e855045181986dbd1bf7f7ae">&#9670;&nbsp;</a></span>CheckWinner()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool GameManager.CheckWinner </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Проверка на наличие победителя.</p>
+<dl class="section return"><dt>Возвращает</dt><dd>Возвращает True - если есть замок-победитель. False - в противном случае.</dd></dl>
+
+</div>
+</div>
+<a id="a4d1fe77c94a4143d549093864386934b" name="a4d1fe77c94a4143d549093864386934b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d1fe77c94a4143d549093864386934b">&#9670;&nbsp;</a></span>ClearField()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void GameManager.ClearField </td>
+          <td>(</td>
+          <td class="paramtype">Transform&#160;</td>
+          <td class="paramname"><em>field</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Очистить поле.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">field</td><td>Поле, которое необходимо очистить от всех детей.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad51f3ed00d53edcd55f21892ea12d0c2" name="ad51f3ed00d53edcd55f21892ea12d0c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad51f3ed00d53edcd55f21892ea12d0c2">&#9670;&nbsp;</a></span>DisableShardsButtons()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void GameManager.DisableShardsButtons </td>
+          <td>(</td>
+          <td class="paramtype">Button&#160;</td>
+          <td class="paramname"><em>pressedButton</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Button[]&#160;</td>
+          <td class="paramname"><em>shardsToExchange</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Отключить кнопки осколков выбора кроме нажатой.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pressedButton</td><td>Нажатая кнопка.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a8d69157cb6b97eabeff2374d8e9adeaf" name="a8d69157cb6b97eabeff2374d8e9adeaf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d69157cb6b97eabeff2374d8e9adeaf">&#9670;&nbsp;</a></span>GameOver()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GameManager.GameOver </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Конец игры.</p>
+<p >Конец наступает, если кто-то изучил финальную технологию или же вышел лимит ходов.</p>
+
+</div>
+</div>
+<a id="a6a8b4a861b3e6191456005a5c8a994b0" name="a6a8b4a861b3e6191456005a5c8a994b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a8b4a861b3e6191456005a5c8a994b0">&#9670;&nbsp;</a></span>GetRandomShardIndex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int GameManager.GetRandomShardIndex </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Получить случайный индекс осколка из колоды.</p>
+<dl class="section return"><dt>Возвращает</dt><dd>Возвращает индекс случайного осколка из колоды.</dd></dl>
+<p >Получение происходит выниманием из колоды осколка.</p>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">Exception</td><td>Исключение, если пробуем достать осколок, когда колода пуста.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae2e9e3816d063a6d22fef86132bfa4d0" name="ae2e9e3816d063a6d22fef86132bfa4d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2e9e3816d063a6d22fef86132bfa4d0">&#9670;&nbsp;</a></span>GetSkipCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int GameManager.GetSkipCount </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Получить количество игроков, пропустивших ход.</p>
+<dl class="section return"><dt>Возвращает</dt><dd>Возвращает количество игроков, пропустивших ход.</dd></dl>
+
+</div>
+</div>
+<a id="a88e3df7501cc5bfd79cf9b515432c840" name="a88e3df7501cc5bfd79cf9b515432c840"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88e3df7501cc5bfd79cf9b515432c840">&#9670;&nbsp;</a></span>GiveHandShards()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GameManager.GiveHandShards </td>
+          <td>(</td>
+          <td class="paramtype">Transform&#160;</td>
+          <td class="paramname"><em>hand</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>count</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Выдача осколков в руки замков.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">hand</td><td>Рука игрока.</td></tr>
+    <tr><td class="paramname">count</td><td>Количество выдаваемых осколков.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad227f115e1ed4cc0504ffc30b6567184" name="ad227f115e1ed4cc0504ffc30b6567184"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad227f115e1ed4cc0504ffc30b6567184">&#9670;&nbsp;</a></span>GiveShardToHand()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GameManager.GiveShardToHand </td>
+          <td>(</td>
+          <td class="paramtype">Transform&#160;</td>
+          <td class="paramname"><em>hand</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_shard.html">Shard</a>&#160;</td>
+          <td class="paramname"><em>shard</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Выдать осколок в руку замка.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">hand</td><td>Рука замка, в которую нужно положить осколок.</td></tr>
+    <tr><td class="paramname">shard</td><td>Осколок, который необходимо положить в руку.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae241eb912d855337fa49eed4354506fe" name="ae241eb912d855337fa49eed4354506fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae241eb912d855337fa49eed4354506fe">&#9670;&nbsp;</a></span>InitializeConversation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GameManager.InitializeConversation </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_castle.html">Castle</a>&#160;</td>
+          <td class="paramname"><em>opponentCastle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Инициализация переговоров.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">opponentCastle</td><td>Замок противника.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab7872f7fe634ccec1467531a31bfee31" name="ab7872f7fe634ccec1467531a31bfee31"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7872f7fe634ccec1467531a31bfee31">&#9670;&nbsp;</a></span>IsDonationCorrect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool GameManager.IsDonationCorrect </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Проверка на корректность пожертвования.</p>
+<dl class="section return"><dt>Возвращает</dt><dd>Возвращает True (False) - если пожертвование (не) верное.</dd></dl>
+
+</div>
+</div>
+<a id="afb630016c004f8144f935d6533b19948" name="afb630016c004f8144f935d6533b19948"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb630016c004f8144f935d6533b19948">&#9670;&nbsp;</a></span>IsSelectionOfShardsComplete()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool GameManager.IsSelectionOfShardsComplete </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Выбор осколков завершен.</p>
+<dl class="section return"><dt>Возвращает</dt><dd>Возвращает True - если выбор осколков завершен, false - в противном случае.</dd></dl>
+
+</div>
+</div>
+<a id="a27c4306a4cbc5edb8531f7c14f076c32" name="a27c4306a4cbc5edb8531f7c14f076c32"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27c4306a4cbc5edb8531f7c14f076c32">&#9670;&nbsp;</a></span>IsShardUnique()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool GameManager.IsShardUnique </td>
+          <td>(</td>
+          <td class="paramtype">List&lt; <a class="el" href="class_shard.html">Shard</a> &gt;&#160;</td>
+          <td class="paramname"><em>hand</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_shard.html">Shard</a>&#160;</td>
+          <td class="paramname"><em>shard</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Проверка на уникальность осколка.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">hand</td><td>Рука замка, в которой проверяем уникальность.</td></tr>
+    <tr><td class="paramname">shard</td><td>Осколок, который проверяем на уникальность.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Возвращает True - если данного осколка нет в руке. False - если экземпляр данного осколка присутствует в руке.</dd></dl>
+
+</div>
+</div>
+<a id="a60874fdbfd28e4c932db25982134ce8b" name="a60874fdbfd28e4c932db25982134ce8b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60874fdbfd28e4c932db25982134ce8b">&#9670;&nbsp;</a></span>OnClickShardToExchange()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GameManager.OnClickShardToExchange </td>
+          <td>(</td>
+          <td class="paramtype">Button&#160;</td>
+          <td class="paramname"><em>button</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Событие на нажатие выбора осколка.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">button</td><td>Кнопка, на которую нажал игрок.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a402c21aeed5894f1b17cd371ab95c2e5" name="a402c21aeed5894f1b17cd371ab95c2e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a402c21aeed5894f1b17cd371ab95c2e5">&#9670;&nbsp;</a></span>OnEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GameManager.OnEvent </td>
+          <td>(</td>
+          <td class="paramtype">EventData&#160;</td>
+          <td class="paramname"><em>photonEvent</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Метод интерфейса IOnEventCallback - обработчик обратного вызова.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">photonEvent</td><td>Информация о событии.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a05db969923250a9e4247563770411427" name="a05db969923250a9e4247563770411427"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05db969923250a9e4247563770411427">&#9670;&nbsp;</a></span>OpenOpponentShards()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GameManager.OpenOpponentShards </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Открыть все осколки противника.</p>
+<p >Когда мы заключаем соглашение с замком, необходимо у замка напротив должны открыться все осколки.</p>
+
+</div>
+</div>
+<a id="a65b4d54ed35b38fbcfa1d7a23a4d28f6" name="a65b4d54ed35b38fbcfa1d7a23a4d28f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65b4d54ed35b38fbcfa1d7a23a4d28f6">&#9670;&nbsp;</a></span>PullShardFromDeck()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_shard.html">Shard</a> GameManager.PullShardFromDeck </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Достать осколок из общей колоды.</p>
+<dl class="section return"><dt>Возвращает</dt><dd>Возвращает осколок из общей колоды.</dd></dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">Exception</td><td>Исключение, если пробуем достать осколок, когда колода пуста.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a5e65e305d914e33efe5c4227b51ca83e" name="a5e65e305d914e33efe5c4227b51ca83e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e65e305d914e33efe5c4227b51ca83e">&#9670;&nbsp;</a></span>RemoveShardInSelfHand()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void GameManager.RemoveShardInSelfHand </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>shardId</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Обновить собственную руку с осколками.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">shardId</td><td>Id осколка.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a97df320c590536abd4cd701aad6ddd5e" name="a97df320c590536abd4cd701aad6ddd5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97df320c590536abd4cd701aad6ddd5e">&#9670;&nbsp;</a></span>ReturnShardToHand()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GameManager.ReturnShardToHand </td>
+          <td>(</td>
+          <td class="paramtype">Transform&#160;</td>
+          <td class="paramname"><em>hand</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Transform&#160;</td>
+          <td class="paramname"><em>field</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>count</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Возврат осколка к себе в руку.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">count</td><td>Количество возвращаемых осколков одного типа.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9b2546dc001de58a4f2e1c81d26f7ea5" name="a9b2546dc001de58a4f2e1c81d26f7ea5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b2546dc001de58a4f2e1c81d26f7ea5">&#9670;&nbsp;</a></span>SetCastleGroups()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GameManager.SetCastleGroups </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Установить группы замкам.</p>
+<p >Распределение замков по переговорным комнатам.</p>
+
+</div>
+</div>
+<a id="a550838959840984e22a9285e01481b75" name="a550838959840984e22a9285e01481b75"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a550838959840984e22a9285e01481b75">&#9670;&nbsp;</a></span>SwitchButton()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void GameManager.SwitchButton </td>
+          <td>(</td>
+          <td class="paramtype">Button&#160;</td>
+          <td class="paramname"><em>button</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>isEnable</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Переключить кнопку.</p>
+<p >Переключение - включение или выключение кнопки.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">button</td><td>Кнопка, которую необходимо переключить.</td></tr>
+    <tr><td class="paramname">isEnable</td><td>Включить ли кнопку?</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a5eaa56c9c7572eef650487271c39acc1" name="a5eaa56c9c7572eef650487271c39acc1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5eaa56c9c7572eef650487271c39acc1">&#9670;&nbsp;</a></span>SwitchButtons()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void GameManager.SwitchButtons </td>
+          <td>(</td>
+          <td class="paramtype">Button[]&#160;</td>
+          <td class="paramname"><em>buttons</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>isEnable</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Переключить кнопки.</p>
+<p >Переключение - включение или выключение кнопок.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">buttons</td><td>Кнопки, которые необходимо переключить.</td></tr>
+    <tr><td class="paramname">isEnable</td><td>Включить ли кнопки?</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a287db92a7280d7636a6efecaa6d82d1a" name="a287db92a7280d7636a6efecaa6d82d1a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a287db92a7280d7636a6efecaa6d82d1a">&#9670;&nbsp;</a></span>UpdateHandShardsCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void GameManager.UpdateHandShardsCount </td>
+          <td>(</td>
+          <td class="paramtype">Transform&#160;</td>
+          <td class="paramname"><em>hand</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Обновить число осколков в руке.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">hand</td><td>Рука, в которой необходимо обновить количество осколков.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa7b43a083387f3eee81da0c3670d0ba0" name="aa7b43a083387f3eee81da0c3670d0ba0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7b43a083387f3eee81da0c3670d0ba0">&#9670;&nbsp;</a></span>UpdateTimer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void GameManager.UpdateTimer </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>timerLeft</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TMP_Text&#160;</td>
+          <td class="paramname"><em>timerText</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Обновить таймер.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">timerLeft</td><td>Оставшееся время.</td></tr>
+    <tr><td class="paramname">timerText</td><td>Текстовое поле таймера.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Данные класса</h2>
+<a id="a09e8cc3689aeeef2b35098fe9c3310a2" name="a09e8cc3689aeeef2b35098fe9c3310a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09e8cc3689aeeef2b35098fe9c3310a2">&#9670;&nbsp;</a></span>ConversationRoomTime</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const float GameManager.ConversationRoomTime = 90</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Время переговорного этапа.</p>
+<p >По истечении данного таймера все игроки перейдут обратно в общую комнату.</p>
+
+</div>
+</div>
+<a id="a6fb656233007ea9a50b541624069e041" name="a6fb656233007ea9a50b541624069e041"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6fb656233007ea9a50b541624069e041">&#9670;&nbsp;</a></span>conversationRoomTimerLeft</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float GameManager.conversationRoomTimerLeft</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Таймер комнаты переговоров.</p>
+<p >По истечении таймера завершаются переговоры.</p>
+
+</div>
+</div>
+<a id="a3f85dd256c2053f24cb499db23a1cc3f" name="a3f85dd256c2053f24cb499db23a1cc3f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f85dd256c2053f24cb499db23a1cc3f">&#9670;&nbsp;</a></span>conversationRoomTimerText</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">TMP_Text GameManager.conversationRoomTimerText</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Текстовое поле таймера в переговорной комнате.</p>
+<p >Сообщает игрокам оставшееся время до перемещения в общую комнату.</p>
+
+</div>
+</div>
+<a id="ac0a749b8ccf612b3d4ad21031a133830" name="ac0a749b8ccf612b3d4ad21031a133830"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0a749b8ccf612b3d4ad21031a133830">&#9670;&nbsp;</a></span>MainRoomTime</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const float GameManager.MainRoomTime = 15</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Время обзорного этапа.</p>
+<p >По истечении данного таймера игроки попадают в переговорный этап.</p>
+
+</div>
+</div>
+<a id="a2172931d021fdb3e8a4c00f992228323" name="a2172931d021fdb3e8a4c00f992228323"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2172931d021fdb3e8a4c00f992228323">&#9670;&nbsp;</a></span>mainRoomTimerLeft</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float GameManager.mainRoomTimerLeft</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Таймер игры в главной комнате.</p>
+<p >По истечении таймера начнётся этап переговоров.</p>
+
+</div>
+</div>
+<a id="a3799a5900aa139e815881b0ebd9e67f1" name="a3799a5900aa139e815881b0ebd9e67f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3799a5900aa139e815881b0ebd9e67f1">&#9670;&nbsp;</a></span>mainRoomTimerText</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">TMP_Text GameManager.mainRoomTimerText</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Текстовое поле таймера в общей комнате.</p>
+<p >Сообщает игрокам оставшееся время до перемещения в переговорную комнату.</p>
+
+</div>
+</div>
+<a id="ad41f5ad7e617af71fa558b8f1037610e" name="ad41f5ad7e617af71fa558b8f1037610e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad41f5ad7e617af71fa558b8f1037610e">&#9670;&nbsp;</a></span>opponentNicknamesText</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">TMP_Text [] GameManager.opponentNicknamesText</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Никнеймы противника.</p>
+<p >В UI есть несколько мест, где используется ник противника.</p>
+
+</div>
+</div>
+<a id="add7959cd224c4c7e4fe0f949cd821048" name="add7959cd224c4c7e4fe0f949cd821048"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add7959cd224c4c7e4fe0f949cd821048">&#9670;&nbsp;</a></span>roundsLeft</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int GameManager.roundsLeft</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Количество оставшихся раундов.</p>
+<p >Если осталось 0 раундов, то игра завершается без победителя.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Полный список свойств</h2>
+<a id="a2ff33c8f0c17c22e34fd0e95885e184b" name="a2ff33c8f0c17c22e34fd0e95885e184b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ff33c8f0c17c22e34fd0e95885e184b">&#9670;&nbsp;</a></span>RoundsLeft</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int GameManager.RoundsLeft</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Количество оставшихся раундов.</p>
+<p >Если осталось 0 раундов, то игра завершается без победителя.</p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов класса находятся в файле:<ul>
+<li>E:/Programming/Unity/MIEMProject/Documentation/Code/GameManager.cs</li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

@@ -1,0 +1,20 @@
+var searchData=
+[
+  ['nestedsealscount_0',['nestedSealsCount',['../class_hint.html#ac51ae79a6da317333cb6c5bdd1242993',1,'Hint']]],
+  ['nickname_1',['nickname',['../class_adept.html#ae159ce6dc36e091cf1aed96e27fbd790',1,'Adept.nickname()'],['../class_magister.html#a4d989ec6120dcc99f0fd60129a38aff9',1,'Magister.nickname()']]],
+  ['nicknameinput_2',['nicknameInput',['../class_waiting_room.html#a1aa6d15893579696c8694076e6f01e8e',1,'WaitingRoom']]],
+  ['nodestoclose_3',['nodesToClose',['../class_dialogue_manager.html#a7142fce133637f2489ccc96987389447',1,'DialogueManager.nodesToClose()'],['../class_initializing_scene.html#ab29d98c9193f47ef70382e280a70db50',1,'InitializingScene.nodesToClose()']]],
+  ['nodestoopen_4',['nodesToOpen',['../class_grading.html#a91f0f1dffec6df6541d132ea09bbca0d',1,'Grading.nodesToOpen()'],['../class_initializing_scene.html#aa871418b8b91415d9069ff4fb9597d26',1,'InitializingScene.nodesToOpen()']]],
+  ['nothidden_5',['notHidden',['../class_technology.html#a8c40be36cc1f162013e2b0e0bc084e46',1,'Technology']]],
+  ['numberimage_6',['numberImage',['../class_grade.html#af627fdadc49a72165479fbe169561e69',1,'Grade']]],
+  ['numberinitialshards_7',['NumberInitialShards',['../class_game_manager.html#a17999c5c55b9e2ae011e1be580bb7f32',1,'GameManager']]],
+  ['numbernewshards_8',['NumberNewShards',['../class_game_manager.html#a871a46756151697883909f29c632f26b',1,'GameManager']]],
+  ['numberofofferstodonate_9',['numberOfOffersToDonate',['../class_game_manager.html#a22192885865779be90ea86869962cacd',1,'GameManager']]],
+  ['numberofreadyplayerstext_10',['numberOfReadyPlayersText',['../class_end_game.html#aa58b52f4a0341dddd790c40360dd0a4b',1,'EndGame.numberOfReadyPlayersText()'],['../class_results_window.html#a44beae6d282fd8cb66d9b8051630c51d',1,'ResultsWindow.numberOfReadyPlayersText()']]],
+  ['numberofsymbols_11',['NumberOfSymbols',['../class_elements_test.html#a81515d07edbd4a76b8da96af455d8991',1,'ElementsTest']]],
+  ['numberplayerstext_12',['numberPlayersText',['../class_lobby_list_item.html#a50410c11ba23aa1963030905bef3dc87',1,'LobbyListItem']]],
+  ['numberroundstext_13',['numberRoundsText',['../class_game_manager.html#ada0be2e6b12fd888115690817aa55c32',1,'GameManager']]],
+  ['numbers_14',['numbers',['../class_grade.html#a887ba2d05f576b122d11a37fdbaa1dbc',1,'Grade']]],
+  ['numbertransmittedshards_15',['numberTransmittedShards',['../class_drop_place.html#a8425ae88d7f0197639e1a214df2b80de',1,'DropPlace']]],
+  ['numbervalue_16',['numberValue',['../class_grade.html#aa760ea303997143f9b06c8eceeeb7b7b',1,'Grade']]]
+];

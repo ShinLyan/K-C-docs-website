@@ -1,0 +1,23 @@
+var searchData=
+[
+  ['gameover_0',['GameOver',['../class_game_manager.html#a8d69157cb6b97eabeff2374d8e9adeaf',1,'GameManager']]],
+  ['generateanswer_1',['GenerateAnswer',['../class_elements_test.html#a5d01cecc45496003a43e19939a8f7f80',1,'ElementsTest']]],
+  ['generateexcludedshards_2',['GenerateExcludedShards',['../class_second_stage.html#aa6a3e35da64f7a449a3a27b534b3d818',1,'SecondStage']]],
+  ['generateset_3',['GenerateSet',['../class_crystal_altar.html#a8945fb7f9f454b7dc60ad3d2d7b3ebdf',1,'CrystalAltar']]],
+  ['gethandshardscount_4',['GetHandShardsCount',['../class_crystal_altar.html#a38b84a9261e48e03f33f74711488fe93',1,'CrystalAltar']]],
+  ['getlistuniqueshardsfromsets_5',['GetListUniqueShardsFromSets',['../class_crystal_altar.html#a7bbf30228f5b15e57bffe5e3ffe5e719',1,'CrystalAltar']]],
+  ['getmagister_6',['GetMagister',['../class_results_window.html#aabc8d2fb75ab7faa65771a1f2b898514',1,'ResultsWindow']]],
+  ['getmaxcontribution_7',['GetMaxContribution',['../class_results_window.html#a9f777b64f6156e168ccdd45494c4da6f',1,'ResultsWindow']]],
+  ['getrandomshardindex_8',['GetRandomShardIndex',['../class_game_manager.html#a6a8b4a861b3e6191456005a5c8a994b0',1,'GameManager']]],
+  ['getsetshardsid_9',['GetSetShardsId',['../class_crystal_altar.html#ace9a6c3cb0f5b421f1da6d65be17c1b9',1,'CrystalAltar']]],
+  ['getshardsinhand_10',['GetShardsInHand',['../class_crystal_altar.html#acdba87df5b13c8afccce5259d8175fd4',1,'CrystalAltar']]],
+  ['getskipcount_11',['GetSkipCount',['../class_game_manager.html#ae2e9e3816d063a6d22fef86132bfa4d0',1,'GameManager']]],
+  ['gettimertext_12',['GetTimerText',['../class_crystal_altar.html#ab8fbeb25632bc4818fc2afb7397e7d6b',1,'CrystalAltar']]],
+  ['givehandshards_13',['GiveHandShards',['../class_game_manager.html#a88e3df7501cc5bfd79cf9b515432c840',1,'GameManager']]],
+  ['givenewshards_14',['GiveNewShards',['../class_castle.html#a0f20df9df28ccbbb0de549f872423a7a',1,'Castle.GiveNewShards()'],['../class_tech_tree.html#ab6507a5670b20916972b3f7e5849f874',1,'TechTree.GiveNewShards()']]],
+  ['giveoutallshardstofield_15',['GiveOutAllShardsToField',['../class_dialogue_manager.html#adf62646bed494bbc272d6b5091e4fe62',1,'DialogueManager']]],
+  ['giveoutsomeshardstohand_16',['GiveOutSomeShardsToHand',['../class_dialogue_manager.html#a35bbb91c4e71f4004d7e6fa3da091a01',1,'DialogueManager']]],
+  ['giveouttwoshardstohand_17',['GiveOutTwoShardsToHand',['../class_dialogue_manager.html#adecf1dbf5711d9e08c9aa570be5c6680',1,'DialogueManager']]],
+  ['giveshardtohand_18',['GiveShardToHand',['../class_game_manager.html#ad227f115e1ed4cc0504ffc30b6567184',1,'GameManager']]],
+  ['gobacktomenu_19',['GoBackToMenu',['../class_dialogue_manager.html#a28965995bfa548bf143fbe5d8310ad37',1,'DialogueManager']]]
+];
